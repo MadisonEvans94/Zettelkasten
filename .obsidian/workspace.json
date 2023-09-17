@@ -11,11 +11,28 @@
             "id": "236c11382ce7c4f0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Core Notes/Regularization for Deep Learning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "947be6f36c662a3a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Epochs, Batches, and Iterations.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "666f710ecb1df63c",
@@ -93,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Epochs, Batches, and Iterations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Epochs, Batches, and Iterations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Epochs, Batches, and Iterations.md"
               }
             }
           }
@@ -155,8 +173,11 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "41eac1359077602a",
+  "active": "947be6f36c662a3a",
   "lastOpenFiles": [
+    "Core Notes/Regularization for Deep Learning.md",
+    "Epochs, Batches, and Iterations.md",
+    "README.md",
     "Core Notes/TensorFlow.md",
     "Core Notes/Adam Optimizer.md",
     "Core Notes/\"bubble-up\" algorithm.md",
@@ -181,9 +202,6 @@
     "Core Notes/signatures are to interfaces as anonymous functions are to defined functions.md",
     "Core Notes/typescript is useful because it requires you to think about what you code up before you write it.md",
     "Core Notes/Why the \"as\" keyword replaces the need for \"!\" with DOM elements.md",
-    "Core Notes/Difference between type unknown and type any.md",
-    "Core Notes/type casting in Typescript.md",
-    "Core Notes/How Wiki and Second Brain Are Similar and How they are Different.md",
     "What degree of UX",
     "Templates",
     "Core Notes/IMG_0744.jpg",
