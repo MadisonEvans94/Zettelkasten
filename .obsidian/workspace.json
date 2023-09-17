@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3f61a13d230b6df9",
+        "id": "6553018173a5cf44",
         "type": "tabs",
         "children": [
           {
-            "id": "ea740ceac91fcf90",
+            "id": "236c11382ce7c4f0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/TensorFlow.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -38,7 +34,19 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime"
+              }
+            }
+          },
+          {
+            "id": "ea740ceac91fcf90",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Core Notes/TensorFlow.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Core Notes/TensorFlow.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Core Notes/TensorFlow.md"
+                "file": "README.md"
               }
             }
           }
@@ -147,8 +155,9 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "ea740ceac91fcf90",
+  "active": "41eac1359077602a",
   "lastOpenFiles": [
+    "Core Notes/TensorFlow.md",
     "Core Notes/Adam Optimizer.md",
     "Core Notes/\"bubble-up\" algorithm.md",
     "Core Notes/`this` keyword in Dart and Flutter.md",
@@ -175,7 +184,6 @@
     "Core Notes/Difference between type unknown and type any.md",
     "Core Notes/type casting in Typescript.md",
     "Core Notes/How Wiki and Second Brain Are Similar and How they are Different.md",
-    "Core Notes/kubernetes is like a city planner and the application is the buildings.md",
     "What degree of UX",
     "Templates",
     "Core Notes/IMG_0744.jpg",
