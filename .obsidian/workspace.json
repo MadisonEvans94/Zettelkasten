@@ -1,0 +1,308 @@
+{
+  "main": {
+    "id": "55e335fe9117d2e3",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f61a13d230b6df9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e779c70d8d261df4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flutter.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f1ff8655eb641d57",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Postfit home.dart.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "732dd7b3ce0759ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Convolutional Neural Networks (CNNs).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8a81ef10b2e8360a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ChatGPT API Usage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9e6b48189dc219c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Palette Pal Project Description.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "23dc7edde9d6b168",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blue Cloud Music Project Description.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "68fe363e8aa9e4d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "duotune project notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "223520b78bd38ec6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "optimizers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d3df25af55d9c131",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Regularization for Deep Learning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c917e58a030d2b55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Convolution - Engineering Your Own Space.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "96f22d455f6861fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "eadf7cb3349e72a6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41eac1359077602a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c281caf81723773b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fc2b661a7053c8ef",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "666f710ecb1df63c",
+    "type": "split",
+    "children": [
+      {
+        "id": "f1881e7bebee9df5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "053e6ea35087bb58",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "optimizers.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bd54cafd73348402",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "optimizers.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "71d8b8e4ade37a1c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f529e23d331b5eb8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "optimizers.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "223520b78bd38ec6",
+  "lastOpenFiles": [
+    "README.md",
+    "Screen Shot 2023-09-17 at 11.00.48 AM.png",
+    "Screen Shot 2023-09-17 at 11.00.22 AM.png",
+    "Screen Shot 2023-09-17 at 10.57.04 AM.png",
+    "Screen Shot 2023-09-17 at 10.53.36 AM.png",
+    "Screen Shot 2023-09-17 at 10.49.12 AM.png",
+    "Screen Shot 2023-09-17 at 10.48.51 AM.png",
+    "Screen Shot 2023-09-17 at 10.44.59 AM.png",
+    "Deep Learning.md",
+    "optimizers.md",
+    "Regularization for Deep Learning.md",
+    "Drop The Ball.md",
+    "duotune project notes.md",
+    "Blue Cloud Music Project Description.md",
+    "Palette Pal Project Description.md",
+    "ChatGPT API Usage.md",
+    "Convolutional Neural Networks (CNNs).md",
+    "reverb space.md",
+    "Translation Invariance.md",
+    "Apprenticeship Dialogue.md",
+    "Convolution - Engineering Your Own Space.md",
+    "Blue Cloud Music Blogs.md",
+    "Screen Shot 2023-08-19 at 11.24.00 AM.png",
+    "Screen Shot 2023-08-19 at 10.22.26 AM.png",
+    "Screen Shot 2023-08-19 at 10.10.42 AM.png",
+    "Sine Is All You Need.md",
+    "Postfit home.dart.md",
+    "Flutter.md",
+    "Dart.md",
+    "syntax basics of Dart.md",
+    "State Management in Flutter.md",
+    "Untitled Page 2.pdf",
+    "Postfit.md",
+    "Database Notes for WhereTo.md",
+    "Dart's core library.md",
+    "`this` keyword in Dart and Flutter.md",
+    "Generics in Dart.md",
+    "Java (Servlets",
+    "IMG_0747.heic",
+    "What degree of UX",
+    "Templates",
+    "Model = DB Server (and associated server-side logic), View = Client/Browser, Controller = Server-side logic",
+    "Model = DB Server (and associated server-side logic), View = Client",
+    "Untitled.canvas"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "accentColor": "",
+  "cssTheme": "Dark Moss",
+  "enabledCssSnippets": [
+    "distinct-color-graph-view"
+  ],
+  "translucency": true,
+  "baseFontSize": 16
+}

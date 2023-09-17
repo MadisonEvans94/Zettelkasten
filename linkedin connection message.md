@@ -1,0 +1,1 @@
+Hey *recruiter_name*, my name is Madison and I recently applied to the *position_name* position at *company_name*. I found your profile while doing some research and wanted to have an opportunity to connect. The position seems like a great fit and I'd love to speak directly about the role if you're available!
