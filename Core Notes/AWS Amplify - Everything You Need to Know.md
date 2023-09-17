@@ -1,5 +1,5 @@
 #incubator 
-upstream: [[aws]]
+upstream: [[AWS]]
 
 ---
 

@@ -8,127 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e779c70d8d261df4",
+            "id": "ea740ceac91fcf90",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flutter.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f1ff8655eb641d57",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Postfit home.dart.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "732dd7b3ce0759ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Convolutional Neural Networks (CNNs).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8a81ef10b2e8360a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ChatGPT API Usage.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9e6b48189dc219c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Palette Pal Project Description.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "23dc7edde9d6b168",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blue Cloud Music Project Description.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "68fe363e8aa9e4d7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "duotune project notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "223520b78bd38ec6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "optimizers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d3df25af55d9c131",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Regularization for Deep Learning.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c917e58a030d2b55",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Convolution - Engineering Your Own Space.md",
+                "file": "Core Notes/TensorFlow.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -174,13 +65,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "666f710ecb1df63c",
@@ -196,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "optimizers.md",
+                "file": "Core Notes/TensorFlow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -213,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "optimizers.md",
+                "file": "Core Notes/TensorFlow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -236,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "optimizers.md"
+                "file": "Core Notes/TensorFlow.md"
               }
             }
           }
@@ -258,51 +147,54 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "223520b78bd38ec6",
+  "active": "ea740ceac91fcf90",
   "lastOpenFiles": [
-    "README.md",
-    "Screen Shot 2023-09-17 at 11.00.48 AM.png",
-    "Screen Shot 2023-09-17 at 11.00.22 AM.png",
-    "Screen Shot 2023-09-17 at 10.57.04 AM.png",
-    "Screen Shot 2023-09-17 at 10.53.36 AM.png",
-    "Screen Shot 2023-09-17 at 10.49.12 AM.png",
-    "Screen Shot 2023-09-17 at 10.48.51 AM.png",
-    "Screen Shot 2023-09-17 at 10.44.59 AM.png",
-    "Deep Learning.md",
-    "optimizers.md",
-    "Regularization for Deep Learning.md",
-    "Drop The Ball.md",
-    "duotune project notes.md",
-    "Blue Cloud Music Project Description.md",
-    "Palette Pal Project Description.md",
-    "ChatGPT API Usage.md",
-    "Convolutional Neural Networks (CNNs).md",
-    "reverb space.md",
-    "Translation Invariance.md",
-    "Apprenticeship Dialogue.md",
-    "Convolution - Engineering Your Own Space.md",
-    "Blue Cloud Music Blogs.md",
-    "Screen Shot 2023-08-19 at 11.24.00 AM.png",
-    "Screen Shot 2023-08-19 at 10.22.26 AM.png",
-    "Screen Shot 2023-08-19 at 10.10.42 AM.png",
-    "Sine Is All You Need.md",
-    "Postfit home.dart.md",
-    "Flutter.md",
-    "Dart.md",
-    "syntax basics of Dart.md",
-    "State Management in Flutter.md",
-    "Untitled Page 2.pdf",
-    "Postfit.md",
-    "Database Notes for WhereTo.md",
-    "Dart's core library.md",
-    "`this` keyword in Dart and Flutter.md",
-    "Generics in Dart.md",
-    "Java (Servlets",
-    "IMG_0747.heic",
+    "Core Notes/Adam Optimizer.md",
+    "Core Notes/\"bubble-up\" algorithm.md",
+    "Core Notes/`this` keyword in Dart and Flutter.md",
+    "What degree of UX/UI is needed for Frontend Development.md",
+    "Core Notes",
+    "Core Notes/What special abilities does statically-typed language give you?.md",
+    "Core Notes/Would you rather have \"silly\" errors during development, or insanity-inducing errors in production?.md",
+    "Core Notes/Typescript compiler takes Typescript code and compiles it to vanilla JS.md",
+    "Core Notes/There are 2 ways you can type your code - Implicitely or Explicitely.md",
+    "Core Notes/Characters, Symbols, and the Unicode Miracle.md",
+    "Core Notes/Webpack.md",
+    "Core Notes/Common Gang of Four Design Patterns in Typescript.md",
+    "Core Notes/Content Management System (CMS).md",
+    "Core Notes/Liskov Substitution Principle.md",
+    "Core Notes/Typing - Static vs Dynamic.md",
+    "Core Notes/SOLID.md",
+    "Core Notes/why tuples need the \"?\" syntax.md",
+    "Core Notes/function signatures.md",
+    "Core Notes/What is the \"!\" symbol and why is it good for catching null pointer errors.md",
+    "Core Notes/Similarities between signatures and interfaces.md",
+    "Core Notes/signatures are to interfaces as anonymous functions are to defined functions.md",
+    "Core Notes/typescript is useful because it requires you to think about what you code up before you write it.md",
+    "Core Notes/Why the \"as\" keyword replaces the need for \"!\" with DOM elements.md",
+    "Core Notes/Difference between type unknown and type any.md",
+    "Core Notes/type casting in Typescript.md",
+    "Core Notes/How Wiki and Second Brain Are Similar and How they are Different.md",
+    "Core Notes/kubernetes is like a city planner and the application is the buildings.md",
     "What degree of UX",
     "Templates",
-    "Model = DB Server (and associated server-side logic), View = Client/Browser, Controller = Server-side logic",
-    "Model = DB Server (and associated server-side logic), View = Client",
+    "Core Notes/IMG_0744.jpg",
+    "Core Notes/IMG_75879B85F264-1.jpeg",
+    "IMG_0747.heic",
+    "Core Notes/IMG_75879B85F264-1 1.jpeg",
+    "Core Notes/Screen Shot 2023-06-14 at 10.39.05 AM.png",
+    "Core Notes/Untitled Page.jpeg",
+    "Core Notes/Screen Shot 2023-06-14 at 11.09.17 AM.png",
+    "Core Notes/Pasted image 20230614140048.png",
+    "Core Notes/Pasted image 20230614140251.png",
+    "Core Notes/Pasted image 20230614140350.png",
+    "Core Notes/Pasted image 20230614141822.png",
+    "Java (Servlets",
+    "Core Notes/Untitled Page 2.pdf",
+    "New Folder With Items/What degree of UX",
+    "New Folder With Items/Untitled Page 2.pdf",
+    "New Folder With Items/Templates",
+    "New Folder With Items/Java (Servlets",
     "Untitled.canvas"
   ]
 }
