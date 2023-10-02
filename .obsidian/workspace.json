@@ -25,14 +25,98 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Epochs, Batches, and Iterations.md",
+                "file": "Core Notes/Deep Learning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "229fe7ebf07d8c14",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Core Notes/ChatGPT API Usage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4bdfbc43775a524a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LeetCode Problem-Solving Strategies by Keywords and Patterns.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "404a8d0b052cf12e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Anatomy of a Pytorch File.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a95fce9fb656dae3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pytorch Data Loaders.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "be8e5ef9349960be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Residual Neural Networks (ResNet).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b28b3850df999de8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Deep Learning Quiz 3 Study Guide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ff2acdbaea73c0fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI Ethics Midterm Study Guide.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -111,7 +195,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Epochs, Batches, and Iterations.md",
+                "file": "AI Ethics Midterm Study Guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +212,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Epochs, Batches, and Iterations.md",
+                "file": "AI Ethics Midterm Study Guide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +235,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Epochs, Batches, and Iterations.md"
+                "file": "AI Ethics Midterm Study Guide.md"
               }
             }
           }
@@ -173,10 +257,26 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "947be6f36c662a3a",
+  "active": "ff2acdbaea73c0fd",
   "lastOpenFiles": [
-    "Core Notes/Regularization for Deep Learning.md",
+    "Deep Learning Quiz 3 Study Guide.md",
+    "AI Ethics Midterm Study Guide.md",
+    "Effectiveness of transfer learning under certain conditions.md",
+    "Residual Neural Networks (ResNet).md",
+    "Pytorch Data Loaders.md",
+    "Pytorch nn.Module.md",
+    "Anatomy of a Pytorch File.md",
+    "Pytorch Optimizers.md",
+    "Pytorch Criterion.md",
+    "LeetCode Problem-Solving Strategies by Keywords and Patterns.md",
+    "Core Notes/ChatGPT API Usage.md",
+    "Batch Normalization.md",
+    "Screen Shot 2023-09-17 at 1.35.26 PM.png",
+    "Core Notes/Deep Learning.md",
+    "Weight Initialization.md",
+    "Screen Shot 2023-09-17 at 12.34.47 PM.png",
     "Epochs, Batches, and Iterations.md",
+    "Core Notes/Regularization for Deep Learning.md",
     "README.md",
     "Core Notes/TensorFlow.md",
     "Core Notes/Adam Optimizer.md",
@@ -188,20 +288,6 @@
     "Core Notes/Would you rather have \"silly\" errors during development, or insanity-inducing errors in production?.md",
     "Core Notes/Typescript compiler takes Typescript code and compiles it to vanilla JS.md",
     "Core Notes/There are 2 ways you can type your code - Implicitely or Explicitely.md",
-    "Core Notes/Characters, Symbols, and the Unicode Miracle.md",
-    "Core Notes/Webpack.md",
-    "Core Notes/Common Gang of Four Design Patterns in Typescript.md",
-    "Core Notes/Content Management System (CMS).md",
-    "Core Notes/Liskov Substitution Principle.md",
-    "Core Notes/Typing - Static vs Dynamic.md",
-    "Core Notes/SOLID.md",
-    "Core Notes/why tuples need the \"?\" syntax.md",
-    "Core Notes/function signatures.md",
-    "Core Notes/What is the \"!\" symbol and why is it good for catching null pointer errors.md",
-    "Core Notes/Similarities between signatures and interfaces.md",
-    "Core Notes/signatures are to interfaces as anonymous functions are to defined functions.md",
-    "Core Notes/typescript is useful because it requires you to think about what you code up before you write it.md",
-    "Core Notes/Why the \"as\" keyword replaces the need for \"!\" with DOM elements.md",
     "What degree of UX",
     "Templates",
     "Core Notes/IMG_0744.jpg",
@@ -213,8 +299,6 @@
     "Core Notes/Screen Shot 2023-06-14 at 11.09.17 AM.png",
     "Core Notes/Pasted image 20230614140048.png",
     "Core Notes/Pasted image 20230614140251.png",
-    "Core Notes/Pasted image 20230614140350.png",
-    "Core Notes/Pasted image 20230614141822.png",
     "Java (Servlets",
     "Core Notes/Untitled Page 2.pdf",
     "New Folder With Items/What degree of UX",
