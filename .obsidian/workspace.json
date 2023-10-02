@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LeetCode Problem-Solving Strategies by Keywords and Patterns.md",
+                "file": "Core Notes/LeetCode Problem-Solving Strategies by Keywords and Patterns.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Anatomy of a Pytorch File.md",
+                "file": "Core Notes/Anatomy of a Pytorch File.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pytorch Data Loaders.md",
+                "file": "Core Notes/Pytorch Data Loaders.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Residual Neural Networks (ResNet).md",
+                "file": "Core Notes/Residual Neural Networks (ResNet).md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Deep Learning Quiz 3 Study Guide.md",
+                "file": "Core Notes/Deep Learning Quiz 3 Study Guide.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI Ethics Midterm Study Guide.md",
+                "file": "Core Notes/Epochs, Batches, and Iterations.md",
                 "mode": "source",
                 "source": false
               }
@@ -178,8 +178,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "666f710ecb1df63c",
@@ -195,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI Ethics Midterm Study Guide.md",
+                "file": "Core Notes/Epochs, Batches, and Iterations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI Ethics Midterm Study Guide.md",
+                "file": "Core Notes/Epochs, Batches, and Iterations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -235,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI Ethics Midterm Study Guide.md"
+                "file": "Core Notes/Epochs, Batches, and Iterations.md"
               }
             }
           }
@@ -257,25 +256,25 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "ff2acdbaea73c0fd",
+  "active": "41eac1359077602a",
   "lastOpenFiles": [
-    "Deep Learning Quiz 3 Study Guide.md",
-    "AI Ethics Midterm Study Guide.md",
-    "Effectiveness of transfer learning under certain conditions.md",
-    "Residual Neural Networks (ResNet).md",
-    "Pytorch Data Loaders.md",
-    "Pytorch nn.Module.md",
-    "Anatomy of a Pytorch File.md",
-    "Pytorch Optimizers.md",
-    "Pytorch Criterion.md",
-    "LeetCode Problem-Solving Strategies by Keywords and Patterns.md",
+    "Core Notes/AI Ethics Midterm Study Guide.md",
+    "Core Notes/Deep Learning Quiz 3 Study Guide.md",
+    "Core Notes/Effectiveness of transfer learning under certain conditions.md",
+    "Core Notes/Residual Neural Networks (ResNet).md",
+    "Core Notes/Pytorch Data Loaders.md",
+    "Core Notes/Pytorch nn.Module.md",
+    "Core Notes/Anatomy of a Pytorch File.md",
+    "Core Notes/Pytorch Optimizers.md",
+    "Core Notes/Pytorch Criterion.md",
+    "Core Notes/LeetCode Problem-Solving Strategies by Keywords and Patterns.md",
     "Core Notes/ChatGPT API Usage.md",
-    "Batch Normalization.md",
-    "Screen Shot 2023-09-17 at 1.35.26 PM.png",
+    "Core Notes/Batch Normalization.md",
+    "Core Notes/Screen Shot 2023-09-17 at 1.35.26 PM.png",
     "Core Notes/Deep Learning.md",
-    "Weight Initialization.md",
-    "Screen Shot 2023-09-17 at 12.34.47 PM.png",
-    "Epochs, Batches, and Iterations.md",
+    "Core Notes/Weight Initialization.md",
+    "Core Notes/Screen Shot 2023-09-17 at 12.34.47 PM.png",
+    "Core Notes/Epochs, Batches, and Iterations.md",
     "Core Notes/Regularization for Deep Learning.md",
     "README.md",
     "Core Notes/TensorFlow.md",
