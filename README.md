@@ -2,6 +2,8 @@
 
 # Zettelkasten Mind Map for Software Engineering
 
+<img width="1117" alt="Screen Shot 2023-10-02 at 10 38 59 AM" src="https://github.com/MadisonEvans94/Zettelkasten/assets/100099375/8c270f14-e86a-41d4-8fbb-6ae91f65f113">
+
 ## Purpose
 
 The purpose of this repository is to serve as a dynamic, evolving knowledge base that encapsulates a wide array of topics in software engineering. The Zettelkasten method is employed to create a graph-like structure of interconnected notes, each serving as a node that links to one or more "upstream" concepts. This enables a holistic understanding of the subject matter, facilitating both depth and breadth of knowledge.
