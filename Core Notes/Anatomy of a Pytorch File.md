@@ -38,7 +38,7 @@ from torchvision.datasets import CIFAR10
 > see [[Pytorch Optimizers]] for more
 
 - **Data Loaders (`trainloader`)**: These are PyTorch utilities for loading data in mini-batches, which are crucial for training large datasets and optimizing the model effectively. 
-> see [[Pytorch Data Loaders]] for more 
+> see [[Pytorch Data Loader Class]] for more 
 
 
 ## Process Flow 

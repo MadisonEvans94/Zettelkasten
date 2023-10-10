@@ -8,91 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "236c11382ce7c4f0",
+            "id": "f5b780113f62daa6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Core Notes/Regularization for Deep Learning.md",
+                "file": "Core Notes/Pytorch Data Loader Class.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "947be6f36c662a3a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/Deep Learning.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "229fe7ebf07d8c14",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/ChatGPT API Usage.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4bdfbc43775a524a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/LeetCode Problem-Solving Strategies by Keywords and Patterns.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "404a8d0b052cf12e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/Anatomy of a Pytorch File.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a95fce9fb656dae3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/Pytorch Data Loaders.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "be8e5ef9349960be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/Residual Neural Networks (ResNet).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b28b3850df999de8",
+            "id": "699ac6191d71e5be",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -104,19 +32,19 @@
             }
           },
           {
-            "id": "ff2acdbaea73c0fd",
+            "id": "72feb12141fc4c73",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Core Notes/Epochs, Batches, and Iterations.md",
+                "file": "Captum.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -178,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "666f710ecb1df63c",
@@ -194,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Core Notes/Epochs, Batches, and Iterations.md",
+                "file": "Captum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Core Notes/Epochs, Batches, and Iterations.md",
+                "file": "Captum.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Core Notes/Epochs, Batches, and Iterations.md"
+                "file": "Captum.md"
               }
             }
           }
@@ -256,48 +185,47 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "41eac1359077602a",
+  "active": "72feb12141fc4c73",
   "lastOpenFiles": [
-    "Core Notes/AI Ethics Midterm Study Guide.md",
+    "AI Ethics Midterm Notes.md",
+    "Screen Shot 2023-10-09 at 1.18.04 PM.png",
+    "Screen Shot 2023-10-09 at 1.17.47 PM.png",
+    "Screen Shot 2023-10-09 at 1.17.07 PM.png",
+    "Screen Shot 2023-10-09 at 1.14.23 PM.png",
+    "Screen Shot 2023-10-09 at 1.14.10 PM.png",
+    "Screen Shot 2023-10-09 at 1.06.07 PM.png",
+    "Screen Shot 2023-10-09 at 1.04.42 PM.png",
+    "Screen Shot 2023-10-09 at 1.02.43 PM.png",
+    "Screen Shot 2023-10-09 at 1.02.00 PM.png",
+    "Screen Shot 2023-10-09 at 1.00.33 PM.png",
+    "Captum.md",
     "Core Notes/Deep Learning Quiz 3 Study Guide.md",
-    "Core Notes/Effectiveness of transfer learning under certain conditions.md",
-    "Core Notes/Residual Neural Networks (ResNet).md",
-    "Core Notes/Pytorch Data Loaders.md",
-    "Core Notes/Pytorch nn.Module.md",
-    "Core Notes/Anatomy of a Pytorch File.md",
-    "Core Notes/Pytorch Optimizers.md",
-    "Core Notes/Pytorch Criterion.md",
-    "Core Notes/LeetCode Problem-Solving Strategies by Keywords and Patterns.md",
+    "Differences between different types of modern architectures (AlexNet, VGGNet, Inception Net, ResNet).md",
+    "GradCAM.md",
+    "Receptive Fields.md",
+    "Core Notes/Pytorch Data Loader Class.md",
+    "Invariance vs. Equivariance.md",
+    "Postfit Technical Documentation.md",
+    "Pytorch Boilerplates.md",
+    "Pytorch - Dataset Class.md",
+    "Untitled.md",
     "Core Notes/ChatGPT API Usage.md",
-    "Core Notes/Batch Normalization.md",
-    "Core Notes/Screen Shot 2023-09-17 at 1.35.26 PM.png",
-    "Core Notes/Deep Learning.md",
-    "Core Notes/Weight Initialization.md",
-    "Core Notes/Screen Shot 2023-09-17 at 12.34.47 PM.png",
-    "Core Notes/Epochs, Batches, and Iterations.md",
+    "Fully Convolutional Neural Networks.md",
+    "BCE Loss.md",
+    "Visualization of Neural Networks.md",
+    "Core Notes/Transfer Learning and Generalization.md",
     "Core Notes/Regularization for Deep Learning.md",
+    "Core Notes/Deep Learning.md",
+    "Core Notes/LeetCode Problem-Solving Strategies by Keywords and Patterns.md",
+    "Core Notes/Anatomy of a Pytorch File.md",
+    "Core Notes/Residual Neural Networks (ResNet).md",
+    "Core Notes/Stochastic Gradient.md",
     "README.md",
-    "Core Notes/TensorFlow.md",
-    "Core Notes/Adam Optimizer.md",
-    "Core Notes/\"bubble-up\" algorithm.md",
-    "Core Notes/`this` keyword in Dart and Flutter.md",
-    "What degree of UX/UI is needed for Frontend Development.md",
+    "Core Notes/Epochs, Batches, and Iterations.md",
     "Core Notes",
-    "Core Notes/What special abilities does statically-typed language give you?.md",
-    "Core Notes/Would you rather have \"silly\" errors during development, or insanity-inducing errors in production?.md",
-    "Core Notes/Typescript compiler takes Typescript code and compiles it to vanilla JS.md",
-    "Core Notes/There are 2 ways you can type your code - Implicitely or Explicitely.md",
     "What degree of UX",
     "Templates",
-    "Core Notes/IMG_0744.jpg",
-    "Core Notes/IMG_75879B85F264-1.jpeg",
     "IMG_0747.heic",
-    "Core Notes/IMG_75879B85F264-1 1.jpeg",
-    "Core Notes/Screen Shot 2023-06-14 at 10.39.05 AM.png",
-    "Core Notes/Untitled Page.jpeg",
-    "Core Notes/Screen Shot 2023-06-14 at 11.09.17 AM.png",
-    "Core Notes/Pasted image 20230614140048.png",
-    "Core Notes/Pasted image 20230614140251.png",
     "Java (Servlets",
     "Core Notes/Untitled Page 2.pdf",
     "New Folder With Items/What degree of UX",
