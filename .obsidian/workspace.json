@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Core Notes/Pytorch Data Loader Class.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -191,7 +191,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Core Notes/Pytorch Data Loader Class.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +208,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Core Notes/Pytorch Data Loader Class.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -231,7 +231,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Core Notes/Pytorch Data Loader Class.md"
+                "file": "README.md"
               }
             }
           }
@@ -255,6 +255,8 @@
   },
   "active": "f5b780113f62daa6",
   "lastOpenFiles": [
+    "Screen Shot 2023-10-11 at 1.42.37 PM.png",
+    "Core Notes/Pytorch Data Loader Class.md",
     "Core Notes/Screen Shot 2023-10-02 at 12.25.47 PM.png",
     "Core Notes/Visualization of Neural Networks.md",
     "README.md",
@@ -290,7 +292,6 @@
     "Screen Shot 2023-10-09 at 1.18.04 PM.png",
     "Screen Shot 2023-10-09 at 1.17.47 PM.png",
     "Core Notes/Deep Learning Quiz 3 Study Guide.md",
-    "Core Notes/Differences between different types of modern architectures (AlexNet, VGGNet, Inception Net, ResNet).md",
     "Core Notes",
     "What degree of UX",
     "Templates",
