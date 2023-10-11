@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python Inheritence.md",
+                "file": "Fully Convolutional Neural Networks & Image Segmentation.md",
                 "mode": "source",
                 "source": false
               }
@@ -207,7 +207,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python Inheritence.md",
+                "file": "Fully Convolutional Neural Networks & Image Segmentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,7 +224,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python Inheritence.md",
+                "file": "Fully Convolutional Neural Networks & Image Segmentation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -247,7 +247,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python Inheritence.md"
+                "file": "Fully Convolutional Neural Networks & Image Segmentation.md"
               }
             }
           }
@@ -271,9 +271,11 @@
   },
   "active": "bebd500d03b5e859",
   "lastOpenFiles": [
+    "Core Notes/Deep Learning.md",
+    "Supervised Pre-training.md",
+    "How Batch Size Affects Optimization.md",
     "Core Notes/Batch Normalization.md",
     "Python Inheritence.md",
-    "Core Notes/Deep Learning.md",
     "Core Notes/Optimizers.md",
     "Core Notes/Weight Initialization.md",
     "Core Notes/Regularization for Deep Learning.md",
@@ -306,8 +308,6 @@
     "Invariance vs. Equivariance.md",
     "Postfit Technical Documentation.md",
     "Pytorch - Dataset Class.md",
-    "Untitled.md",
-    "Core Notes/ChatGPT API Usage.md",
     "Core Notes",
     "What degree of UX",
     "Templates",

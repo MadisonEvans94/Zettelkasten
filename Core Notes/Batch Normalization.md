@@ -174,7 +174,3 @@ for epoch in range(100):
 In this example, `nn.BatchNorm1d` is used to apply Batch Normalization to each of the hidden layers in our network. The BatchNorm layers are initialized with 50 and 20 features, matching the output dimensions of `fc1` and `fc2`, respectively.
 
 By incorporating Batch Normalization, we expect the model to train faster and potentially reach a better minimum. Note that the parameters \( \gamma \) and \( \beta \) are learned during the training process, along with the other parameters of the model.
-
----
-
-By following this example, you should be able to integrate Batch Normalization into your own PyTorch projects.
