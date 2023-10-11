@@ -22,7 +22,7 @@ https://gatech.instructure.com/courses/346568/pages/optimizing-the-input-images?
 --- 
 
 
-![[Screen Shot 2023-10-02 at 1.36.43 PM.png]]
+
 
 
 

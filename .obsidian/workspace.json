@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Captum.md",
+                "file": "Core Notes/Captum.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GradCAM.md",
+                "file": "Core Notes/GradCAM.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Style Transfer.md",
+                "file": "Core Notes/Style Transfer.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pytorch Boilerplates.md",
+                "file": "Core Notes/Pytorch Boilerplates.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pytorch.md",
+                "file": "Core Notes/Pytorch.md",
                 "mode": "source",
                 "source": false
               }
@@ -107,28 +107,13 @@
             "id": "2878b987a017b665",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Core Notes/Optimizers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bebd500d03b5e859",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/Stochastic Gradient Descent.md",
-                "mode": "source",
-                "source": false
+                "file": "Core Notes/Screen Shot 2023-10-02 at 12.25.47 PM.png"
               }
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "vertical"
@@ -190,8 +175,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "666f710ecb1df63c",
@@ -207,7 +191,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Core Notes/Stochastic Gradient Descent.md",
+                "file": "Core Notes/Pytorch Data Loader Class.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,7 +208,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Core Notes/Stochastic Gradient Descent.md",
+                "file": "Core Notes/Pytorch Data Loader Class.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -247,7 +231,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Core Notes/Stochastic Gradient Descent.md"
+                "file": "Core Notes/Pytorch Data Loader Class.md"
               }
             }
           }
@@ -269,45 +253,44 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "bebd500d03b5e859",
+  "active": "f5b780113f62daa6",
   "lastOpenFiles": [
-    "Pasted image 20231011133640.png",
-    "Style Transfer.md",
-    "Fully Convolutional Neural Networks & Image Segmentation.md",
+    "Core Notes/Screen Shot 2023-10-02 at 12.25.47 PM.png",
+    "Core Notes/Visualization of Neural Networks.md",
+    "README.md",
+    "Core Notes/Screen Shot 2023-10-02 at 12.27.01 PM.png",
+    "Core Notes/Screen Shot 2023-10-02 at 12.27.39 PM.png",
+    "Core Notes/Screen Shot 2023-10-02 at 12.45.46 PM.png",
+    "Core Notes/Screen Shot 2023-10-02 at 1.36.43 PM.png",
+    "Core Notes/Screen Shot 2023-10-02 at 1.42.25 PM.png",
+    "Core Notes/Python Inheritence.md",
+    "Core Notes/Style Transfer.md",
+    "Core Notes/Pasted image 20231011133640.png",
     "Core Notes/Deep Learning.md",
+    "Core Notes/Optimizers.md",
+    "Core Notes/Stochastic Gradient Descent.md",
+    "Core Notes/Fully Convolutional Neural Networks & Image Segmentation.md",
     "Supervised Pre-training.md",
     "How Batch Size Affects Optimization.md",
     "Core Notes/Batch Normalization.md",
-    "Python Inheritence.md",
-    "Core Notes/Optimizers.md",
     "Core Notes/Weight Initialization.md",
     "Core Notes/Regularization for Deep Learning.md",
-    "Pytorch.md",
-    "Pytorch Boilerplates.md",
-    "Transfer Learning.md",
+    "Core Notes/Pytorch.md",
+    "Core Notes/Pytorch Boilerplates.md",
+    "Core Notes/Transfer Learning.md",
     "Core Notes/Deep Learning Generalization.md",
-    "Summary Statistics For Texture Generation.md",
-    "Style Transfer.pdf",
-    "Code Walkthrough for Grad-CAM and Guided Backpropagation.md",
-    "GradCAM.md",
-    "Pasted image 20231010092709.png",
-    "Untitled 1.md",
-    "Captum.md",
+    "Core Notes/Summary Statistics For Texture Generation.md",
+    "Core Notes/Style Transfer.pdf",
+    "Core Notes/Code Walkthrough for Grad-CAM and Guided Backpropagation.md",
+    "Core Notes/GradCAM.md",
+    "Core Notes/Pasted image 20231010092709.png",
+    "Core Notes/Untitled 1 1.md",
+    "Core Notes/Captum.md",
     "AI Ethics Midterm Notes.md",
     "Screen Shot 2023-10-09 at 1.18.04 PM.png",
     "Screen Shot 2023-10-09 at 1.17.47 PM.png",
-    "Screen Shot 2023-10-09 at 1.17.07 PM.png",
-    "Screen Shot 2023-10-09 at 1.14.23 PM.png",
-    "Screen Shot 2023-10-09 at 1.14.10 PM.png",
-    "Screen Shot 2023-10-09 at 1.06.07 PM.png",
-    "Screen Shot 2023-10-09 at 1.04.42 PM.png",
-    "Screen Shot 2023-10-09 at 1.02.43 PM.png",
-    "Screen Shot 2023-10-09 at 1.02.00 PM.png",
     "Core Notes/Deep Learning Quiz 3 Study Guide.md",
-    "Differences between different types of modern architectures (AlexNet, VGGNet, Inception Net, ResNet).md",
-    "Receptive Fields.md",
-    "Core Notes/Pytorch Data Loader Class.md",
-    "Invariance vs. Equivariance.md",
+    "Core Notes/Differences between different types of modern architectures (AlexNet, VGGNet, Inception Net, ResNet).md",
     "Core Notes",
     "What degree of UX",
     "Templates",
