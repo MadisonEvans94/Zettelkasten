@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fully Convolutional Neural Networks & Image Segmentation.md",
+                "file": "Core Notes/Stochastic Gradient Descent.md",
                 "mode": "source",
                 "source": false
               }
@@ -207,7 +207,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fully Convolutional Neural Networks & Image Segmentation.md",
+                "file": "Core Notes/Stochastic Gradient Descent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,7 +224,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Fully Convolutional Neural Networks & Image Segmentation.md",
+                "file": "Core Notes/Stochastic Gradient Descent.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -247,7 +247,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fully Convolutional Neural Networks & Image Segmentation.md"
+                "file": "Core Notes/Stochastic Gradient Descent.md"
               }
             }
           }
@@ -271,6 +271,9 @@
   },
   "active": "bebd500d03b5e859",
   "lastOpenFiles": [
+    "Pasted image 20231011133640.png",
+    "Style Transfer.md",
+    "Fully Convolutional Neural Networks & Image Segmentation.md",
     "Core Notes/Deep Learning.md",
     "Supervised Pre-training.md",
     "How Batch Size Affects Optimization.md",
@@ -282,7 +285,6 @@
     "Pytorch.md",
     "Pytorch Boilerplates.md",
     "Transfer Learning.md",
-    "Style Transfer.md",
     "Core Notes/Deep Learning Generalization.md",
     "Summary Statistics For Texture Generation.md",
     "Style Transfer.pdf",
@@ -306,8 +308,6 @@
     "Receptive Fields.md",
     "Core Notes/Pytorch Data Loader Class.md",
     "Invariance vs. Equivariance.md",
-    "Postfit Technical Documentation.md",
-    "Pytorch - Dataset Class.md",
     "Core Notes",
     "What degree of UX",
     "Templates",

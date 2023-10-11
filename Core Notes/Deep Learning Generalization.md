@@ -36,7 +36,7 @@ upstream: [[Deep Learning]]
 
 **Optimization Error** is fundamentally tied to the optimization problem you're trying to solve. In deep learning, the objective is often to minimize a loss function $L(θ)$ with respect to model parameters $θ$. This loss function measures how well your neural network's predictions align with the true data.
 
-Optimization algorithms like [[Stochastic Gradient]]stochastic gradient descent (SGD) aim to find the minimum of this loss function, but they are not always perfect:
+Optimization algorithms like [[Stochastic Gradient Descent]]stochastic gradient descent (SGD) aim to find the minimum of this loss function, but they are not always perfect:
 
 1. **Local Minima**: In high-dimensional spaces, although local minima are generally not a problem, saddle points can slow down optimization.
 2. **Vanishing/Exploding Gradients**: In deep architectures, gradients can vanish or explode as they propagate back through the layers.
