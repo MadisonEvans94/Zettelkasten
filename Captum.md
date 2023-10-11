@@ -1,5 +1,5 @@
 #seed 
-upstream: [[pytorch]]
+upstream: [[Pytorch]]
 
 ---
 

@@ -1,6 +1,6 @@
 
 #seed 
-upstream:
+upstream: [[Deep Learning]]
 
 ---
 

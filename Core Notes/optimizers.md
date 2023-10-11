@@ -1,4 +1,4 @@
-#incubator 
+#evergreen1 
 upstream: [[Deep Learning]]
 
 ---
@@ -9,32 +9,6 @@ upstream: [[Deep Learning]]
 
 # Brain Dump: 
 
-- Issues in Optimization 
-	- noisy gradient estimates 
-	- saddle points 
-	- ill conditioned Loss Surface 
-- Optimizers: Mathematical Descriptions and High Level Intuitions
-	- Vanilla Stochastic Gradient Descent 
-		- the vanilla steepest descent implementation 
-		- Introducing the concept of momentum 
-	- Adagrad 
-	- RMSProp 
-	- Adam 
-- Per-Parameter Learning Rate
-	- Idea: have a dynamic learning rate for each weight 
-- Second Order Approximation of Loss (Hessian)
-- Learning Rate Schedules 
-- Condition Number: What is it and how is it relevant? 
-	- the ratio of largest and smallest eigen value 
-	- tells us how different the curvature is along different dimensions
-	- if this is high, SGD will make big steps in some dimensions and small steps in other dimensions 
-- Using a subset of the data to calculate the loss at each iteration is an "Unbiased Estimator" 
-	- The expectation is equal to the true non-stochastic full batch value (this is only on expectation. In reality we'll have high variance, meaning we'll take very "noisy" steps during gradient descent)
-
-
---- 
-
-Certainly, let's dive deep into the topic of optimizers in the context of deep learning. I'll expand on each section of your markdown document, providing both mathematical and intuitive explanations.
 
 ---
 

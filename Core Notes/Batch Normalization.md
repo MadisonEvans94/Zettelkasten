@@ -88,8 +88,93 @@ No, BatchNorm can be useful in any machine learning model where internal covaria
 
 ---
 
-## Summary
+Certainly! Below is the section titled "## Pytorch Example" where I walk you through a step-by-step example of implementing Batch Normalization in PyTorch.
 
-Batch Normalization is a powerful technique for improving the training of deep neural networks. It normalizes the input for each layer, which helps in faster convergence and reduces the sensitivity to the initial weights. However, it comes with some computational overhead and can make the model harder to interpret.
+---
 
-By understanding these aspects of Batch Normalization, you'll be well-equipped to implement, debug, and even innovate on this foundational technique. Whether you're preparing for a test or just looking to deepen your understanding, this guide should serve as a comprehensive resource.
+## PyTorch Example
+
+In this section, we'll go through a simple [[Pytorch]] example demonstrating how to implement Batch Normalization using PyTorch. We'll create a simple neural network with two hidden layers and apply BatchNorm.
+
+### Import Libraries
+
+First, let's import the necessary libraries.
+
+```python
+import torch
+import torch.nn as nn
+import torch.optim as optim
+```
+
+### Define the Network with BatchNorm
+
+Here, we define a simple feedforward neural network with two hidden layers. We apply Batch Normalization after the linear layers but before the activation function, which is a commonly used pattern.
+
+> See the below example which uses [[Python Inheritence]]
+
+```python
+class SimpleNNWithBatchNorm(nn.Module):
+    def __init__(self):
+        super(SimpleNNWithBatchNorm, self).__init__()
+        self.fc1 = nn.Linear(10, 50)
+        self.bn1 = nn.BatchNorm1d(50)
+        self.fc2 = nn.Linear(50, 20)
+        self.bn2 = nn.BatchNorm1d(20)
+        self.fc3 = nn.Linear(20, 1)
+        
+    def forward(self, x):
+        x = self.fc1(x)
+        x = self.bn1(x)
+        x = torch.relu(x)
+        
+        x = self.fc2(x)
+        x = self.bn2(x)
+        x = torch.relu(x)
+        
+        x = self.fc3(x)
+        return x
+```
+
+### Create Data and Model
+
+Let's create some synthetic data and initialize the model.
+
+```python
+# Generate synthetic data
+input_data = torch.randn(100, 10)
+output_data = torch.randn(100, 1)
+
+# Initialize the model
+model = SimpleNNWithBatchNorm()
+```
+
+### Training Loop
+
+Finally, let's set up a simple training loop.
+
+```python
+# Loss and optimizer
+criterion = nn.MSELoss()
+optimizer = optim.SGD(model.parameters(), lr=0.01)
+
+# Training loop
+for epoch in range(100):
+    # Forward pass
+    outputs = model(input_data)
+    loss = criterion(outputs, output_data)
+    
+    # Backward pass and optimization
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
+    
+    print(f'Epoch [{epoch+1}/100], Loss: {loss.item():.4f}')
+```
+
+In this example, `nn.BatchNorm1d` is used to apply Batch Normalization to each of the hidden layers in our network. The BatchNorm layers are initialized with 50 and 20 features, matching the output dimensions of `fc1` and `fc2`, respectively.
+
+By incorporating Batch Normalization, we expect the model to train faster and potentially reach a better minimum. Note that the parameters \( \gamma \) and \( \beta \) are learned during the training process, along with the other parameters of the model.
+
+---
+
+By following this example, you should be able to integrate Batch Normalization into your own PyTorch projects.

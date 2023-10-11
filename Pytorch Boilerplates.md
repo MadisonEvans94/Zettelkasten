@@ -1,5 +1,5 @@
 #seed 
-upstream: [[Deep Learning]]
+upstream: [[Pytorch]]
 
 ---
 

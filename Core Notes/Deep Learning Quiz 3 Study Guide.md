@@ -14,7 +14,7 @@ lesson 9:
 ## Conceptual Questions 
 - gram matrix 
 - [x] Types of errors and what they mean
-- [x] [[Transfer Learning and Generalization]]
+- [x] [[Deep Learning Generalization]]
 - [ ] [[Visualization of Neural Networks]]
 - [x] [[Differences between different types of modern architectures (AlexNet, VGGNet, Inception Net, ResNet)]]
 - [x] [[Convolutional Neural Networks (CNNs)]]
