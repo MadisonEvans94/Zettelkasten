@@ -1,6 +1,11 @@
 #evergreen1 
 ###### upstream: [[Deep Learning]]
 
+[Blog: Understanding LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+
+---
+
+
 ### Diagram:
 ![[IMG_75879B85F264-1.jpeg]]
 

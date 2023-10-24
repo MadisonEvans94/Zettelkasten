@@ -20,6 +20,66 @@
             }
           },
           {
+            "id": "6a8350bd6dce0c56",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Classifier Free Guidance.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "786bbe9dd0fd9150",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Map Reduce.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "91a1dbfdf3d5e781",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Deep Learning Assignment 3 Report.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b94ea81ed9fe2818",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GAN Diffusion Model Project Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9e8a3442a8c306f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GenImage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "699ac6191d71e5be",
             "type": "leaf",
             "state": {
@@ -85,35 +145,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Core Notes/Pytorch Boilerplates.md",
+                "file": "Core Notes/LSTM.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "0723086ded7e40e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/Pytorch.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2878b987a017b665",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Core Notes/Screen Shot 2023-10-02 at 12.25.47 PM.png"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -175,7 +214,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "666f710ecb1df63c",
@@ -191,7 +231,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Core Notes/LSTM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +248,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Core Notes/LSTM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -231,7 +271,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Core Notes/LSTM.md"
               }
             }
           }
@@ -253,13 +293,28 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "f5b780113f62daa6",
+  "active": "213d44fe4ee8f2d8",
   "lastOpenFiles": [
+    "Core Notes/RNN (Recurrent Neural Network).md",
+    "Hyperbolic Tangent.md",
+    "RNN computation graph.pdf",
+    "Core Notes/Pytorch Boilerplates.md",
+    "GenImage.md",
+    "2D Fourier Transform.md",
+    "GenImage_paper.pdf",
+    "GenImage.pdf",
+    "Core Notes/Pytorch.md",
+    "Core Notes/Screen Shot 2023-10-02 at 12.25.47 PM.png",
+    "GAN Diffusion Model Project Notes.md",
+    "Deep Learning Assignment 3 Report.md",
+    "README.md",
+    "Map Reduce.md",
+    "Core Notes/Template Pattern.md",
+    "Classifier Free Guidance.md",
+    "Untitled.md",
     "Screen Shot 2023-10-11 at 1.42.37 PM.png",
     "Core Notes/Pytorch Data Loader Class.md",
-    "Core Notes/Screen Shot 2023-10-02 at 12.25.47 PM.png",
     "Core Notes/Visualization of Neural Networks.md",
-    "README.md",
     "Core Notes/Screen Shot 2023-10-02 at 12.27.01 PM.png",
     "Core Notes/Screen Shot 2023-10-02 at 12.27.39 PM.png",
     "Core Notes/Screen Shot 2023-10-02 at 12.45.46 PM.png",
@@ -276,31 +331,15 @@
     "How Batch Size Affects Optimization.md",
     "Core Notes/Batch Normalization.md",
     "Core Notes/Weight Initialization.md",
-    "Core Notes/Regularization for Deep Learning.md",
-    "Core Notes/Pytorch.md",
-    "Core Notes/Pytorch Boilerplates.md",
-    "Core Notes/Transfer Learning.md",
-    "Core Notes/Deep Learning Generalization.md",
-    "Core Notes/Summary Statistics For Texture Generation.md",
     "Core Notes/Style Transfer.pdf",
-    "Core Notes/Code Walkthrough for Grad-CAM and Guided Backpropagation.md",
-    "Core Notes/GradCAM.md",
     "Core Notes/Pasted image 20231010092709.png",
-    "Core Notes/Untitled 1 1.md",
-    "Core Notes/Captum.md",
-    "AI Ethics Midterm Notes.md",
     "Screen Shot 2023-10-09 at 1.18.04 PM.png",
-    "Screen Shot 2023-10-09 at 1.17.47 PM.png",
-    "Core Notes/Deep Learning Quiz 3 Study Guide.md",
     "Core Notes",
     "What degree of UX",
     "Templates",
     "IMG_0747.heic",
     "Java (Servlets",
     "Core Notes/Untitled Page 2.pdf",
-    "New Folder With Items/What degree of UX",
-    "New Folder With Items/Untitled Page 2.pdf",
-    "New Folder With Items/Templates",
     "Untitled.canvas"
   ]
 }
