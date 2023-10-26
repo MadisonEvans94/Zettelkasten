@@ -6,100 +6,209 @@
 ---
 
 
-### Diagram:
-![[IMG_75879B85F264-1.jpeg]]
+## How it Works
 
-![[Pasted image 20230725064356.png]]
+All [[RNN (Recurrent Neural Network)]] have the form of a chain of repeating modules of neural network. In standard RNNs, this repeating module will have a very simple structure, such as a single tanh layer. 
+
+> Note: the diagram doesn't show it, but the combined hidden state and input needs to pass through a linear layer before going through the tanh activation. see [[Hidden State vs Output in RNN]]
+
+![[repeating_rnn_modules.png]]
+
+**LSTM** networks also have this chain like structure, but the repeating module has a different structure. Instead of having a single neural network layer, there are four, interacting in a very special way.
+
+![[repeating_lstm_model.png]]
+
+
+![[diagram_components.png]]
+
+The key to LSTMs is the cell state, the horizontal line running through the top of the diagram.
+
+The cell state is kind of like a conveyor belt. It runs straight down the entire chain, with only some minor linear interactions. It’s very easy for information to just flow along it unchanged.
+
+![[longterm_rail.png]]
+
+The LSTM does have the ability to remove or add information to the cell state, carefully regulated by structures called gates. Gates are a way to optionally let information through. They are composed out of a sigmoid neural net layer and a pointwise multiplication operation.
+
+![[Screen Shot 2023-10-24 at 4.21.15 PM.png]]
+
+The sigmoid layer outputs numbers between zero and one, describing how much of each component should be let through. A value of zero means “let nothing through,” while a value of one means “let everything through!”
+
+An LSTM has three of these gates, to protect and control the cell state.
+
 - Three gates: [[Forget Gate, Input Gate, and Output Gate]]
 - Two Rails: Long-term and short-term memory 
 
-### Underlying Question: 
-- *What does it mean to have long-term memory and short-term memory? I think I have a good grasp on how it works mathematically, but I'm still having a hard time understanding what the long-term and short-term memory portions represent. What is a good example that can explicitly show me what the long-term outputs and the short-term outputs solve respectively*
+### Step By Step Walkthrough: 
 
-let's break it down in the context of language modeling, specifically for text generation or translation:
+#### Forget Gate 
 
-1.  **Long-Term Memory (Cell State)**: This represents the LSTM's accumulated knowledge about the text it has seen so far. It can carry information from earlier time steps to later ones. Let's say you're translating a book. The cell state might carry the context of the entire story or a long conversation that happened several paragraphs ago.
-    
-    Here's a specific example: Suppose the LSTM is processing the sentence "In 1997, she moved to France. She has enjoyed living there because she loves the ____". The cell state will have carried the information about where "there" is from the first sentence to the second. So, when it sees the blank at the end of the second sentence, it can use the long-term memory to fill in the blank with something relevant to France.
-    
-2.  **Short-Term Memory (Hidden State)**: This represents the LSTM's understanding of what has been happening in the recent past. In the context of the same translation task, it might carry the context of the current sentence or even just a part of the sentence.
-    
-    For instance, when translating the sentence "The cat, which already had its dinner, is sleeping on the couch", the short-term memory helps the model understand the immediate context when it sees the word "is". It can recall that the sentence is about the cat, which is important for producing the correct translation.
-    
+> determines how much of the old cell state to keep. It can erase parts of the cell state that are no longer needed.
 
-So, in summary, the long-term memory helps the LSTM keep track of information that's important over long periods of time or over the span of the entire sequence, while the short-term memory helps it understand the immediate context to make decisions about the current time step.
+First we need to decide which information to throw away from the cell state. This is made by a sigmoid layer called the *forget gate*. It takes $h_{t-1}$ and $x_{t}$ and outputs a number between 0 and 1 for each value in cell state $C_{t-1}$ . A 1 represents "completely keep this", and a 0 means "completely forget this". 
 
-It's worth noting that the distinction between long-term and short-term memory in an LSTM is more of a design intention than an explicit mechanism. The model doesn't strictly decide what is "long-term" or "short-term" information; rather, the gates and cell states are trained to regulate information flow in a way that effectively creates this differentiation.
+![[forget_gate.png]]
 
-### Examples (if any): 
+$$f_t = {\sigma}(W_f {\cdot}[h_{t-1}, x_t] + b_f)$$
+#### Input Gate 
 
-*Provide a clear and educational example using python and tensor flow/keras*
+> determines how much of the new input will be added to the cell state. Essentially, it's like a valve deciding how much new information to store in the cell.
 
-let's take an example of sentiment analysis using the IMDb movie review dataset. We'll use LSTMs to classify movie reviews as either positive or negative.
+Next, we need to figure out how much of the new information we're going to keep and add to the cell state. A sigmoid layer called the *input gate* determines which values to update. A $tanh$ layer creates a vector of new candidate values $\tilde{C}$ that could be added to the state. 
 
-Here's a simple implementation using [[TensorFlow]] and Keras:
+![[input_gate.png]]
 
-```python 
+$$i_t = {\sigma}(W_i{\cdot}[h_{t-1}, x_t] + b_i$$
+$$\tilde{C}_t = tanh(W_C{\cdot}[h_{t-1}, x_t] + b_C$$
 
-import tensorflow as tf
-from tensorflow.keras.datasets import imdb
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+It’s now time to update the old cell state, $C_{t−1}$, into the new cell state $C_t$. The previous steps already decided what to do, we just need to actually do it.
 
-# parameters
-vocab_size = 10000  # only keep the top 10000 frequently occurring words
-maxlen = 300  # maximum length of the review, pad shorter reviews, truncate longer ones
-embedding_dim = 50  # dimension of the embedding vectors
+We multiply the old state by $f_t$, forgetting the things we decided to forget earlier. Then we add $i_t  {\ast}  \tilde{C}_t$. This is the new candidate values, scaled by how much we decided to update each state value 
 
-# Load the dataset
-(x_train, y_train), (x_test, y_test) = imdb.load_data(num_words=vocab_size)
+![[input_gate_combination.png]]
 
-# Pad the sequences
-x_train = pad_sequences(x_train, maxlen=maxlen)
-x_test = pad_sequences(x_test, maxlen=maxlen)
+#### Output Gate 
 
-# Define the LSTM model
-model = tf.keras.models.Sequential([
-    tf.keras.layers.Embedding(vocab_size, embedding_dim, input_length=maxlen),
-    tf.keras.layers.LSTM(128),
-    tf.keras.layers.Dense(1, activation='sigmoid')
-])
+> determines what part of the cell state will be exposed as the output for the next time step
 
-# Compile the model
-model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+Finally we need to decide what we're going to output. This will be a filtered version of our cell state. To do this, we run a sigmoid layer called the *output gate* which decides what parts of the cell state we're going to output. Then we put the cell state through tanh to squash the values between -1 and 1, and multiply it by the output of the sigmoid gate. 
 
-# Train the model
-model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=2, batch_size=64)
+![[output_gate.png]]
 
-```
+$$o_t = {\sigma} (W_o[h_{t-1}, x_t] + b_o) $$
+$$h_t = o_t{\ast}tanh(C_t)$$
 
-In this script:
 
-1.  We load the IMDb dataset from keras.datasets. This dataset comes preprocessed: the reviews (sequences of words) have been turned into sequences of integers, where each integer represents a specific word in a dictionary.
-2.  We use `pad_sequences` to make all reviews the same length (this is necessary because LSTM layers require input sequences to be of the same length).
-3.  We then define our model architecture. We start with an `Embedding` layer that turns our sequences of integers into sequences of vectors of fixed size (this is a way of dealing with categorical data). We then add an `LSTM` layer with 128 units, followed by a `Dense` layer with a sigmoid activation function (because our problem is binary classification).
-4.  We compile our model, specifying binary crossentropy as our loss function (again, because our problem is binary classification), and Adam as our optimizer.
-5.  Finally, we train our model on the training data for 2 epochs.
+---
 
-This is a simple model and can be improved in many ways (such as using pre-trained word embeddings, using more layers, etc.), but it should give you a basic understanding of how to create a sentiment analysis model with LSTMs using TensorFlow/Keras.
+## Example Pytorch Implementation 
 
-1.  **Embedding Layer**: The first layer is the embedding layer. It consists of a matrix with `vocab_size` rows and `embedding_dim` columns. Each row represents a word in the vocabulary. When a word from a review comes into this layer, the layer turns it into a `embedding_dim`-dimensional vector according to this matrix.
-    
-2.  **LSTM Layer**: This layer takes the sequence of word vectors from the embedding layer. The LSTM layer can be visualized as a chain of blocks, where each block takes a word vector, and the hidden state from the previous block, and produces an output vector and a new hidden state. The hidden state is then passed to the next block in the chain, along with the next word vector. The chain length equals to the `maxlen`.
-    
-3.  **Dense Layer**: After all word vectors in the sequence have been processed by the LSTM layer, the final hidden state is passed to the Dense layer. The Dense layer is simply a linear operation (a dot product with a weight matrix plus a bias vector) followed by a sigmoid activation function. It produces the final output of the model, a single number between 0 and 1 that represents the predicted sentiment of the review.
-    
-
-You can also use the Keras function `model.summary()` to print a summary of your model, which will give you a text representation of your architecture.
+### **1. Import Necessary Libraries**
+We begin by importing the necessary libraries. For our LSTM implementation, we'll need PyTorch and its neural network module.
 
 ```python
-model.summary()
+import torch
+import torch.nn as nn
 ```
 
-For visualizing the model, you can use libraries like [[TensorBoard]] or tools like plot_model from keras.utils.
+---
 
+### **2. Define the Vanilla LSTM Model**
+Our VanillaLSTM class will inherit from PyTorch's `nn.Module`. Within this class, we will define the necessary components for the LSTM gates and the forward pass logic.
 
 ```python
-from tensorflow.keras.utils import plot_model  plot_model(model, to_file='model.png')
+class VanillaLSTM(nn.Module):
+    def __init__(self, input_size, hidden_size):
+        super(VanillaLSTM, self).__init__()
+        
+        self.input_size = input_size
+        self.hidden_size = hidden_size
+
+        # Forget Gate
+        self.Wf = nn.Linear(input_size + hidden_size, hidden_size)
+        self.bf = nn.Parameter(torch.zeros(hidden_size))
+        
+        # Input Gate
+        self.Wi = nn.Linear(input_size + hidden_size, hidden_size)
+        self.bi = nn.Parameter(torch.zeros(hidden_size))
+        
+        # Candidate values for cell state
+        self.Wc = nn.Linear(input_size + hidden_size, hidden_size)
+        self.bc = nn.Parameter(torch.zeros(hidden_size))
+
+        # Output Gate
+        self.Wo = nn.Linear(input_size + hidden_size, hidden_size)
+        self.bo = nn.Parameter(torch.zeros(hidden_size))
 ```
 
-This will save the model diagram to a png file, where you can see the connections between the different layers.
+---
+
+### **3. Forward Pass**
+In the forward method, we define how the LSTM computes its output given an input `x` and the previous states `(h_prev, C_prev)`.
+
+```python
+    def forward(self, x, state):
+        h_prev, C_prev = state
+
+        combined = torch.cat([h_prev, x], dim=1)
+        
+        # Forget Gate
+        f_t = torch.sigmoid(self.Wf(combined) + self.bf)
+        
+        # Input Gate
+        i_t = torch.sigmoid(self.Wi(combined) + self.bi)
+        C_tilda = torch.tanh(self.Wc(combined) + self.bc)
+
+        # Update cell state
+        C_t = f_t * C_prev + i_t * C_tilda
+        
+        # Output Gate
+        o_t = torch.sigmoid(self.Wo(combined) + self.bo)
+        h_t = o_t * torch.tanh(C_t)
+
+        return h_t, C_t
+```
+
+---
+
+### **4. Example Usage**
+Finally, let's instantiate our VanillaLSTM model and test it with some random inputs to verify that everything is working correctly.
+
+```python
+# Example usage:
+input_size = 10
+hidden_size = 20
+
+model = VanillaLSTM(input_size, hidden_size)
+x = torch.randn(1, input_size)
+h_prev = torch.randn(1, hidden_size)
+C_prev = torch.randn(1, hidden_size)
+
+h_t, C_t = model(x, (h_prev, C_prev))
+print("New Hidden State:", h_t)
+print("New Cell State:", C_t)
+```
+
+Remember, this is a basic LSTM implementation to demonstrate the core concepts. PyTorch's in-built `nn.LSTM` module provides a more optimized and feature-rich implementation.
+
+---
+## Why have an output gate when we have a modified cell state?
+
+
+1. **Decoupling Memory and Output**: LSTMs separate the concepts of memory (cell state) and the output (hidden state). While the cell state spans over many time steps and captures long-term dependencies, the hidden state is more about capturing short-term dependencies. An LSTM might want to remember information for a long time but only expose it when it's relevant. For example, in language modeling, an LSTM might remember a subject mentioned at the start of a sentence, but it might only want to use that information when a verb appears later in the sentence. Between those two points, the network might not want to reveal that it's "thinking" about the subject.
+
+2. **Controlled Information Flow**: By using the output gate, LSTMs have an extra layer of control over the information flow. They might decide that some information, even though stored in the cell state, isn't immediately relevant for the current output.
+
+3. **Flexibility**: In some situations, an LSTM might decide that even though it has updated its memory with new information, it doesn't want to reflect that in its outputs yet. It's an additional knob for the network to tune, giving it more flexibility.
+
+4. **Architectural Symmetry**: From a design perspective, having an output gate provides a symmetry to the LSTM architecture. You have three gates each controlling input, memory, and output, giving the LSTM balanced control over all aspects of its operation.
+
+To put it more intuitively, imagine your brain as an LSTM. The **cell state** is your long-term memory. The **input and forget gates** decide what new information to store and what old stuff to forget. Now, just because you learned something new or remembered an old fact doesn't mean you're always talking about it. The **output gate** is like your decision on what current thoughts or memories to share in a conversation. Even if you remember it, you might not mention it unless it's relevant.
+
+--- 
+## Difference Between Cell State and Hidden State 
+
+The difference between the cell state and the hidden state in an LSTM is one of the foundational aspects that sets LSTMs apart from simpler recurrent neural networks (RNNs). Here's a breakdown of their differences:
+
+1. **Functionality and Role**:
+    - **Cell State (\( C_t \))**: 
+        - Acts as the "long-term memory" of the LSTM. It carries information across many time steps, capturing long-term dependencies.
+        - Is modified by the gates (especially the forget and input gates) to add or remove information.
+    - **Hidden State (\( h_t \))**: 
+        - Acts as the "short-term memory" or the "working memory" of the LSTM. 
+        - It's the output of the LSTM cell for the current timestep, which will be used as one of the inputs for the next timestep and can also be fed to other layers in a neural network (e.g., another LSTM layer or a dense layer).
+  
+2. **How They're Updated**:
+    - **Cell State**: 
+        - The forget gate decides what information to throw away or keep.
+        - The input gate decides which values in the state should be updated based on the new input.
+    - **Hidden State**: 
+        - Is derived from the cell state but is filtered through the output gate. This means the information in the cell state isn't directly exposed; it's regulated by the output gate.
+
+3. **Visualization**: 
+    - If you visualize an LSTM cell, the cell state is often represented as a horizontal line running through the top of the cell, emphasizing its role in carrying information across timesteps. The hidden state, on the other hand, emerges from the LSTM cell at each timestep and is passed to the next timestep.
+
+4. **Intuition**: 
+    - Think of the **cell state** as the long-term "knowledge" or "memory" of the network, which gets updated as new information comes in, with some old information possibly getting discarded.
+    - The **hidden state**, meanwhile, is more of a transient state that represents the current or immediate state of the LSTM, conveying the most recent outputs and the immediate context.
+
+In essence, the combination of cell state and hidden state allows LSTMs to maintain a more nuanced and controlled memory mechanism, capable of learning and remembering over long sequences and deciding which information to propagate forward. This capability helps mitigate the vanishing gradient problem seen in traditional RNNs and allows LSTMs to model long-term dependencies in data more effectively.

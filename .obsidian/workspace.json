@@ -104,43 +104,19 @@
             }
           },
           {
-            "id": "f5c499a011ebc891",
+            "id": "bc975b1eb8b663b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Core Notes/GradCAM.md",
+                "file": "Head Vs Common Inner Layer.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7a8ff5070277fafa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/Deep Learning Generalization.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "779cfc1fd81ae1a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/Style Transfer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "213d44fe4ee8f2d8",
+            "id": "95b0ba6ff22d5d04",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -150,9 +126,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "09e9b400ee7935e9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hidden State vs Output in RNN.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "eb6aae6e6e4d0807",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bidirectional RNN.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 11
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -231,7 +231,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Core Notes/LSTM.md",
+                "file": "Hidden State vs Output in RNN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -248,7 +248,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Core Notes/LSTM.md",
+                "file": "Hidden State vs Output in RNN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -271,7 +271,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Core Notes/LSTM.md"
+                "file": "Hidden State vs Output in RNN.md"
               }
             }
           }
@@ -293,47 +293,48 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "213d44fe4ee8f2d8",
+  "active": "09e9b400ee7935e9",
   "lastOpenFiles": [
+    "Core Notes/LSTM.md",
+    "Bidirectional RNN.md",
+    "Hidden State vs Output in RNN.md",
+    "Head Vs Common Inner Layer.md",
+    "Similarity Matrix.md",
+    "nn.Linear.md",
+    "Densely Connected Layer.png",
     "Core Notes/RNN (Recurrent Neural Network).md",
-    "Hyperbolic Tangent.md",
+    "Core Notes/Express.md",
+    "Headspace Idea.md",
+    "headspace.png",
+    "Core Notes/Captum.md",
+    "Dropout.md",
+    "Stacked RNN.md",
+    "Core Notes/GradCAM.md",
+    "Screen Shot 2023-10-25 at 11.08.56 AM.png",
+    "stacked rnn.png",
+    "Core Notes/Deep Learning - Generalization.md",
+    "Core Notes/Postfit.md",
+    "Core Notes/Postfit home.dart.md",
+    "Core Notes/Postfit main.dart.md",
+    "Postfit Technical Documentation.md",
+    "Core Notes/Style Transfer.md",
+    "Xavier (Glorot) initialization.md",
+    "Core Notes/Forget Gate, Input Gate, and Output Gate.md",
+    "repeating_rnn_modules.png",
+    "output_gate.png",
+    "input_gate_combination.png",
+    "input_gate.png",
+    "forget_gate.png",
+    "Screen Shot 2023-10-24 at 4.21.15 PM.png",
     "RNN computation graph.pdf",
+    "Hyperbolic Tangent.md",
     "Core Notes/Pytorch Boilerplates.md",
     "GenImage.md",
     "2D Fourier Transform.md",
     "GenImage_paper.pdf",
     "GenImage.pdf",
     "Core Notes/Pytorch.md",
-    "Core Notes/Screen Shot 2023-10-02 at 12.25.47 PM.png",
-    "GAN Diffusion Model Project Notes.md",
-    "Deep Learning Assignment 3 Report.md",
-    "README.md",
-    "Map Reduce.md",
-    "Core Notes/Template Pattern.md",
-    "Classifier Free Guidance.md",
-    "Untitled.md",
-    "Screen Shot 2023-10-11 at 1.42.37 PM.png",
-    "Core Notes/Pytorch Data Loader Class.md",
-    "Core Notes/Visualization of Neural Networks.md",
-    "Core Notes/Screen Shot 2023-10-02 at 12.27.01 PM.png",
-    "Core Notes/Screen Shot 2023-10-02 at 12.27.39 PM.png",
-    "Core Notes/Screen Shot 2023-10-02 at 12.45.46 PM.png",
-    "Core Notes/Screen Shot 2023-10-02 at 1.36.43 PM.png",
-    "Core Notes/Screen Shot 2023-10-02 at 1.42.25 PM.png",
-    "Core Notes/Python Inheritence.md",
-    "Core Notes/Style Transfer.md",
-    "Core Notes/Pasted image 20231011133640.png",
-    "Core Notes/Deep Learning.md",
-    "Core Notes/Optimizers.md",
-    "Core Notes/Stochastic Gradient Descent.md",
-    "Core Notes/Fully Convolutional Neural Networks & Image Segmentation.md",
-    "Supervised Pre-training.md",
-    "How Batch Size Affects Optimization.md",
-    "Core Notes/Batch Normalization.md",
-    "Core Notes/Weight Initialization.md",
     "Core Notes/Style Transfer.pdf",
-    "Core Notes/Pasted image 20231010092709.png",
-    "Screen Shot 2023-10-09 at 1.18.04 PM.png",
     "Core Notes",
     "What degree of UX",
     "Templates",
