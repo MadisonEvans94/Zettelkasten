@@ -65,7 +65,7 @@ Almost all web development frameworks and languages offer some form of session m
 
 - **[[PHP]]:** PHP has built-in support for sessions. You can start a session using `session_start()`, and then store data in the `$_SESSION` superglobal array.
 
-- **[[Python (Flask)]]:** Flask uses a signed cookie to store session data. You can use the `session` object which works like a Python dictionary.
+- **[[Flask]]:** Flask uses a signed cookie to store session data. You can use the `session` object which works like a Python dictionary.
 
 - **[[Ruby on Rails]]:** Rails uses a cookie-based session store by default. You can interact with the session using the `session` hash.
 

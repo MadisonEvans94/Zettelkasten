@@ -133,26 +133,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hidden State vs Output in RNN.md",
+                "file": "Core Notes/RNN (Recurrent Neural Network).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "eb6aae6e6e4d0807",
+            "id": "edbe48e8c926799f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bidirectional RNN.md",
+                "file": "nn.Embedding.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "acac431ae00c3f9d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Core Notes/Flask.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -231,7 +243,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hidden State vs Output in RNN.md",
+                "file": "Core Notes/Flask.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -248,7 +260,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hidden State vs Output in RNN.md",
+                "file": "Core Notes/Flask.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -271,7 +283,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hidden State vs Output in RNN.md"
+                "file": "Core Notes/Flask.md"
               }
             }
           }
@@ -293,17 +305,34 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "09e9b400ee7935e9",
+  "active": "acac431ae00c3f9d",
   "lastOpenFiles": [
+    "High Level NLP Transformer Process.md",
+    "Templates/Core Thought.md",
+    "Core Notes/Template Pattern.md",
+    "Core Notes/Flask.md",
+    "Attributes and Methods of the Flask App Object.md",
+    "Core Notes/Transformers.md",
+    "Core Notes/Express.md",
+    "Core Notes/Flask Middleware.md",
+    "Swin Transformer Example Code.md",
+    "Swin Loss Curves.png",
+    "Screen Shot 2023-10-27 at 12.48.45 PM.png",
+    "Natural Language Processing - Transformer Analogy.md",
+    "The Ancient Lexicon.png",
+    "Token Crystals.png",
+    "Grotto of Origins.png",
     "Core Notes/LSTM.md",
+    "nn.Embedding.md",
+    "Core Notes/RNN (Recurrent Neural Network).md",
     "Bidirectional RNN.md",
+    "Xavier (Glorot) initialization.md",
+    "nn.Parameter.md",
     "Hidden State vs Output in RNN.md",
     "Head Vs Common Inner Layer.md",
     "Similarity Matrix.md",
     "nn.Linear.md",
     "Densely Connected Layer.png",
-    "Core Notes/RNN (Recurrent Neural Network).md",
-    "Core Notes/Express.md",
     "Headspace Idea.md",
     "headspace.png",
     "Core Notes/Captum.md",
@@ -313,27 +342,10 @@
     "Screen Shot 2023-10-25 at 11.08.56 AM.png",
     "stacked rnn.png",
     "Core Notes/Deep Learning - Generalization.md",
-    "Core Notes/Postfit.md",
-    "Core Notes/Postfit home.dart.md",
-    "Core Notes/Postfit main.dart.md",
-    "Postfit Technical Documentation.md",
-    "Core Notes/Style Transfer.md",
-    "Xavier (Glorot) initialization.md",
-    "Core Notes/Forget Gate, Input Gate, and Output Gate.md",
     "repeating_rnn_modules.png",
-    "output_gate.png",
-    "input_gate_combination.png",
-    "input_gate.png",
-    "forget_gate.png",
-    "Screen Shot 2023-10-24 at 4.21.15 PM.png",
     "RNN computation graph.pdf",
-    "Hyperbolic Tangent.md",
-    "Core Notes/Pytorch Boilerplates.md",
-    "GenImage.md",
-    "2D Fourier Transform.md",
     "GenImage_paper.pdf",
     "GenImage.pdf",
-    "Core Notes/Pytorch.md",
     "Core Notes/Style Transfer.pdf",
     "Core Notes",
     "What degree of UX",

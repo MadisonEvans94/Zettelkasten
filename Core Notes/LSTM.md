@@ -99,54 +99,112 @@ Our VanillaLSTM class will inherit from PyTorch's `nn.Module`. Within this class
 class VanillaLSTM(nn.Module):
     def __init__(self, input_size, hidden_size):
         super(VanillaLSTM, self).__init__()
-        
-        self.input_size = input_size
-        self.hidden_size = hidden_size
 
-        # Forget Gate
-        self.Wf = nn.Linear(input_size + hidden_size, hidden_size)
-        self.bf = nn.Parameter(torch.zeros(hidden_size))
-        
-        # Input Gate
-        self.Wi = nn.Linear(input_size + hidden_size, hidden_size)
-        self.bi = nn.Parameter(torch.zeros(hidden_size))
-        
-        # Candidate values for cell state
-        self.Wc = nn.Linear(input_size + hidden_size, hidden_size)
-        self.bc = nn.Parameter(torch.zeros(hidden_size))
-
-        # Output Gate
-        self.Wo = nn.Linear(input_size + hidden_size, hidden_size)
-        self.bo = nn.Parameter(torch.zeros(hidden_size))
+		self.input_size = input_size
+		self.hidden_size = hidden_size
+		
+		# i_t: input gate
+		
+		self.Wii = nn.Parameter(torch.Tensor(input_size, hidden_size))
+		self.bii = nn.Parameter(torch.Tensor(hidden_size))	
+		self.Whi = nn.Parameter(torch.Tensor(hidden_size, hidden_size))	
+		self.bhi = nn.Parameter(torch.Tensor(hidden_size))
+		
+		# f_t: forget gate
+		self.Wif = nn.Parameter(torch.Tensor(input_size, hidden_size))
+		self.bif = nn.Parameter(torch.Tensor(hidden_size))
+		self.Whf = nn.Parameter(torch.Tensor(hidden_size, hidden_size))
+		self.bhf = nn.Parameter(torch.Tensor(hidden_size))
+		
+		# g_t: cell gate
+		self.Wig = nn.Parameter(torch.Tensor(input_size, hidden_size))
+		self.big = nn.Parameter(torch.Tensor(hidden_size))
+		self.Whg = nn.Parameter(torch.Tensor(hidden_size, hidden_size))
+		self.bhg = nn.Parameter(torch.Tensor(hidden_size))
+		
+		# o_t: output gate
+		self.Wio = nn.Parameter(torch.Tensor(input_size, hidden_size))
+		self.bio = nn.Parameter(torch.Tensor(hidden_size))
+		self.Who = nn.Parameter(torch.Tensor(hidden_size, hidden_size))
+		self.bho = nn.Parameter(torch.Tensor(hidden_size))
+		
+		self.init_hidden()
 ```
+
+
+> The naming convention in the LSTM code for weights and biases follows this pattern:
+
+1. Start with `W` for weights.
+2. The next letter denotes the source of the input:
+   - `i` for input (`x_t`)
+   - `h` for previous hidden state (`h_{t-1}`)
+3. The final letter specifies the gate:
+   - `i` for input gate
+   - `f` for forget gate
+   - `g` for cell gate (candidate cell state)
+   - `o` for output gate
+
+For biases, the naming is similar, but without the starting `W`.
+
+Examples:
+- `Wii`: Weight matrix for input (`x_t`) to input gate.
+- `Whi`: Weight matrix for hidden state (`h_{t-1}`) to input gate.
+- `Wif`: Weight matrix for input (`x_t`) to forget gate.
+- `bii`: Bias for input (`x_t`) affecting the input gate.
+- `bhi`: Bias for hidden state (`h_{t-1}`) affecting the input gate.
+
+This convention helps distinguish the purpose and source of each weight and bias in the LSTM architecture.
+
 
 ---
 
 ### **3. Forward Pass**
 In the forward method, we define how the LSTM computes its output given an input `x` and the previous states `(h_prev, C_prev)`.
 
-```python
-    def forward(self, x, state):
-        h_prev, C_prev = state
 
-        combined = torch.cat([h_prev, x], dim=1)
-        
-        # Forget Gate
-        f_t = torch.sigmoid(self.Wf(combined) + self.bf)
-        
-        # Input Gate
-        i_t = torch.sigmoid(self.Wi(combined) + self.bi)
-        C_tilda = torch.tanh(self.Wc(combined) + self.bc)
+```python 
+# The @ denotes matrix multiplication in PyTorch. Shorthand for a dense layer 
 
-        # Update cell state
-        C_t = f_t * C_prev + i_t * C_tilda
-        
-        # Output Gate
-        o_t = torch.sigmoid(self.Wo(combined) + self.bo)
-        h_t = o_t * torch.tanh(C_t)
+for t in range(seq_size):
 
-        return h_t, C_t
+    # Extract the input for the current timestep.
+    x_t = x[:, t, :]
+
+    # Input gate: Compute using dense layer outputs of `x_t` and `h_t`, then apply sigmoid.
+    i_t = torch.sigmoid(x_t @ self.Wii + self.bii +
+                        h_t @ self.Whi + self.bhi)
+
+    # Cell update (often referred to as the "gate gate"): Compute using dense layer outputs of `x_t` and `h_t`, then apply tanh.
+    g_t = torch.tanh(x_t @ self.Wig + self.big +
+                     h_t @ self.Whg + self.bhg)
+
+    # Forget gate: Compute using dense layer outputs of `x_t` and `h_t`, then apply sigmoid.
+    f_t = torch.sigmoid(x_t @ self.Wif + self.bif +
+                        h_t @ self.Whf + self.bhf)
+
+    # Output gate: Compute using dense layer outputs of `x_t` and `h_t`, then apply sigmoid.
+    o_t = torch.sigmoid(x_t @ self.Wio + self.bio +
+                        h_t @ self.Who + self.bho)
+
+    # UPDATE THE CELL STATE
+    c_t = f_t * c_t + i_t * g_t
+    
+    # UPDATE THE HIDDEN STATE
+    h_t = o_t * torch.tanh(c_t)
+
+return (h_t, c_t)
+
 ```
+
+> If there's one thing you get out of this, it's the following: 
+
+```python 
+	# UPDATE THE CELL STATE
+    c_t = f_t * c_t + i_t * g_t
+    
+    # UPDATE THE HIDDEN STATE
+    h_t = o_t * torch.tanh(c_t)
+```**
 
 ---
 
@@ -190,10 +248,10 @@ To put it more intuitively, imagine your brain as an LSTM. The **cell state** is
 The difference between the cell state and the hidden state in an LSTM is one of the foundational aspects that sets LSTMs apart from simpler recurrent neural networks (RNNs). Here's a breakdown of their differences:
 
 1. **Functionality and Role**:
-    - **Cell State (\( C_t \))**: 
+    - **Cell State $( C_t )$**: 
         - Acts as the "long-term memory" of the LSTM. It carries information across many time steps, capturing long-term dependencies.
         - Is modified by the gates (especially the forget and input gates) to add or remove information.
-    - **Hidden State (\( h_t \))**: 
+    - **Hidden State $(h_t )$**: 
         - Acts as the "short-term memory" or the "working memory" of the LSTM. 
         - It's the output of the LSTM cell for the current timestep, which will be used as one of the inputs for the next timestep and can also be fed to other layers in a neural network (e.g., another LSTM layer or a dense layer).
   

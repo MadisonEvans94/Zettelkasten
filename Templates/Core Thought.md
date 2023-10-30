@@ -3,12 +3,11 @@ upstream:
 
 ---
 
-**video links**: 
+**links**: 
 
 ---
 
-# Brain Dump: 
-
+Brain Dump: 
 
 --- 
 
