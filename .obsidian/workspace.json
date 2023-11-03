@@ -8,139 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f5b780113f62daa6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6a8350bd6dce0c56",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Classifier Free Guidance.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "786bbe9dd0fd9150",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Map Reduce.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "91a1dbfdf3d5e781",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Deep Learning Assignment 3 Report.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b94ea81ed9fe2818",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "GAN Diffusion Model Project Notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9e8a3442a8c306f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "GenImage.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "699ac6191d71e5be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/Deep Learning Quiz 3 Study Guide.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "72feb12141fc4c73",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/Captum.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bc975b1eb8b663b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Head Vs Common Inner Layer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "95b0ba6ff22d5d04",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/LSTM.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "09e9b400ee7935e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/RNN (Recurrent Neural Network).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "edbe48e8c926799f",
+            "id": "cf0cf4c3e85556d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -152,19 +20,77 @@
             }
           },
           {
-            "id": "acac431ae00c3f9d",
+            "id": "45264fff3b951576",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Core Notes/Flask.md",
+                "file": "Core Notes/Postfit Technical Documentation.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "7e28e2470108c308",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Core Notes/Word2Vec.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e20bf89a335d0b4a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Running TODOs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8ab9ef587a388e65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "t-SNE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8cd705ffaa3ad6e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teacher Student Forcing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "221c450407cf6051",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
           }
         ],
-        "currentTab": 12
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -243,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Core Notes/Flask.md",
+                "file": "Core Notes/Word2Vec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -260,7 +186,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Core Notes/Flask.md",
+                "file": "Core Notes/Word2Vec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -283,7 +209,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Core Notes/Flask.md"
+                "file": "Core Notes/Word2Vec.md"
               }
             }
           }
@@ -305,12 +231,35 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "acac431ae00c3f9d",
+  "active": "7e28e2470108c308",
   "lastOpenFiles": [
+    "Running TODOs.md",
+    "Core Notes/Word2Vec.md",
+    "t-SNE.md",
+    "Teacher Student Forcing.md",
+    "Sub Sampling Plot for Word2Vec.png",
+    "Word2Vec Softmax Diagram.png",
+    "Word2Vec Architecture Continued.png",
+    "Word2Vec NN Architecture.png",
+    "Skip Gram Example.png",
+    "Pasted image 20231103130034.png",
+    "Postfit User Story.md",
+    "Core Notes/Postfit Technical Documentation.md",
+    "nn.Embedding.md",
+    "Core Notes/Flask.md",
+    "Core Notes/RNN (Recurrent Neural Network).md",
+    "Core Notes/LSTM.md",
+    "Head Vs Common Inner Layer.md",
+    "README.md",
+    "GenImage.md",
+    "Core Notes/Seq2Seq.md",
+    "seq2seq diagram.png",
+    "Core Notes/Screen Shot 2023-06-14 at 11.09.17 AM.png",
+    "Core Notes/Understanding the Encoder.md",
+    "Flask AI Fitness Potential Boilerplate.md",
     "High Level NLP Transformer Process.md",
     "Templates/Core Thought.md",
     "Core Notes/Template Pattern.md",
-    "Core Notes/Flask.md",
     "Attributes and Methods of the Flask App Object.md",
     "Core Notes/Transformers.md",
     "Core Notes/Express.md",
@@ -319,30 +268,7 @@
     "Swin Loss Curves.png",
     "Screen Shot 2023-10-27 at 12.48.45 PM.png",
     "Natural Language Processing - Transformer Analogy.md",
-    "The Ancient Lexicon.png",
-    "Token Crystals.png",
-    "Grotto of Origins.png",
-    "Core Notes/LSTM.md",
-    "nn.Embedding.md",
-    "Core Notes/RNN (Recurrent Neural Network).md",
     "Bidirectional RNN.md",
-    "Xavier (Glorot) initialization.md",
-    "nn.Parameter.md",
-    "Hidden State vs Output in RNN.md",
-    "Head Vs Common Inner Layer.md",
-    "Similarity Matrix.md",
-    "nn.Linear.md",
-    "Densely Connected Layer.png",
-    "Headspace Idea.md",
-    "headspace.png",
-    "Core Notes/Captum.md",
-    "Dropout.md",
-    "Stacked RNN.md",
-    "Core Notes/GradCAM.md",
-    "Screen Shot 2023-10-25 at 11.08.56 AM.png",
-    "stacked rnn.png",
-    "Core Notes/Deep Learning - Generalization.md",
-    "repeating_rnn_modules.png",
     "RNN computation graph.pdf",
     "GenImage_paper.pdf",
     "GenImage.pdf",

@@ -7,11 +7,6 @@ upstream:
 
 ---
 
-Certainly! Here's a markdown-based note on `nn.Embedding` in PyTorch:
-
----
-
-
 ### Introduction
 
 `nn.Embedding` is a layer provided by PyTorch in its neural network module. It's primarily used for converting sparse categorical data (like word indices) into dense vector representations (embeddings).
@@ -22,7 +17,7 @@ Certainly! Here's a markdown-based note on `nn.Embedding` in PyTorch:
 embedding_layer = nn.Embedding(num_embeddings, embedding_dim)
 ```
 
-- **`num_embeddings`**: Total number of unique embeddings (e.g., vocabulary size in NLP tasks).
+- **`num_embeddings`**: Total number of unique embeddings in input (e.g., vocabulary size in NLP tasks).
 - **`embedding_dim`**: Dimensionality of the embedding vector (e.g., 100, 300 for word embeddings).
 
 ### Key Points
