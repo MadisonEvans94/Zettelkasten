@@ -83,7 +83,7 @@ If we have a target average PAL level, and some notion of how frequently we want
 
 > Prompt: 
 
-I have a target of `1.5` average daily PAL. Provide for me a workout plan for the week that will bring me to an average `1.5`. Assume that the baseline PAL is `1.2`. Workouts should be no longer than `90` min.
+I have a target of `1.5` average daily PAL. Provide for me a workout plan for the week such that the workouts have an MET value that will bring me to an daily average PAL value of `1.5`. Assume that the sedentary baseline PAL is `1.2`. Workouts should be no longer than `90` min.
 
 
 > Answer: 
@@ -178,3 +178,14 @@ Each `90` minute workout should have an intensity of around `6.72` MET to reach 
 
 * Cool Down:
   * 5 minutes of slow-paced cycling followed by stretching.
+
+
+---
+
+
+![[Screen Shot 2023-11-07 at 10.21.59 AM.png]]
+
+
+---
+
+![[Screen Shot 2023-11-07 at 10.23.02 AM.png]]

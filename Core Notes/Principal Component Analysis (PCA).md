@@ -72,7 +72,7 @@ In this code, we first load the Iris dataset. Then, we initialize the PCA model 
 
 ### Visual: 
 
-![[Pasted image 20230615081033.png]]
+![[PCA plot.png]]
 
 ### Why is PCA2 orthogonal to PCA1? 
 

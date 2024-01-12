@@ -13,7 +13,7 @@ A database is an organized collection of data stored and accessed electronically
 
 *There are mainly four types of databases:*
 
-#### 1. **[[Relational database]]**: 
+#### 1. **[[Relational Database]]**: 
 
 Also known as a SQL database, it organizes data into tables. Example: **MySQL**, **Oracle**, **PostgreSQL**.
 

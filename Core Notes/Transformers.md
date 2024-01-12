@@ -9,7 +9,7 @@ upstream: [[Deep Learning]]
 [Transformer: Concepts, Building Blocks, Attention, Sample Implementation in PyTorch](https://www.youtube.com/watch?v=6PmIoCnqcFU&t=1s&ab_channel=RowelAtienza)
 
 ---
-
+> To see a detailed breakdown of the building blocks of a transformer, refer to [[Transformers - Exploring the Building Blocks]]
 ## Feed Forward Walkthrough
 
 Let's take a sentence such as the following: *"I like to eat apples"*

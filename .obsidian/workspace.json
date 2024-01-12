@@ -8,89 +8,91 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cf0cf4c3e85556d0",
+            "id": "bcb9e37b9e88c546",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nn.Embedding.md",
+                "file": "React Typescript.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "45264fff3b951576",
+            "id": "c982391268922c3c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Core Notes/Postfit Technical Documentation.md",
+                "file": "Core Notes/Typescript.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7e28e2470108c308",
+            "id": "e0516f7a49b440df",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Core Notes/Word2Vec.md",
+                "file": "OSI Model.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e20bf89a335d0b4a",
+            "id": "512dad9b53446cd1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Running TODOs.md",
+                "file": "Core Notes/Minimum Spanning Tree.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8ab9ef587a388e65",
+            "id": "3a799c190d1170e1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "t-SNE.md",
+                "file": "IPV4.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8cd705ffaa3ad6e4",
+            "id": "8d488568d06996c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teacher Student Forcing.md",
+                "file": "Protocol.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "221c450407cf6051",
+            "id": "f27c06bd809b94e2",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.4.16"
+                "file": "Spanning Tree Protocol.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -169,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Core Notes/Word2Vec.md",
+                "file": "Spanning Tree Protocol.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Core Notes/Word2Vec.md",
+                "file": "Spanning Tree Protocol.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Core Notes/Word2Vec.md"
+                "file": "Spanning Tree Protocol.md"
               }
             }
           }
@@ -231,54 +233,54 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "7e28e2470108c308",
+  "active": "f27c06bd809b94e2",
   "lastOpenFiles": [
-    "Running TODOs.md",
-    "Core Notes/Word2Vec.md",
-    "t-SNE.md",
-    "Teacher Student Forcing.md",
-    "Sub Sampling Plot for Word2Vec.png",
-    "Word2Vec Softmax Diagram.png",
-    "Word2Vec Architecture Continued.png",
-    "Word2Vec NN Architecture.png",
-    "Skip Gram Example.png",
-    "Pasted image 20231103130034.png",
-    "Postfit User Story.md",
-    "Core Notes/Postfit Technical Documentation.md",
-    "nn.Embedding.md",
-    "Core Notes/Flask.md",
-    "Core Notes/RNN (Recurrent Neural Network).md",
-    "Core Notes/LSTM.md",
-    "Head Vs Common Inner Layer.md",
-    "README.md",
-    "GenImage.md",
-    "Core Notes/Seq2Seq.md",
-    "seq2seq diagram.png",
-    "Core Notes/Screen Shot 2023-06-14 at 11.09.17 AM.png",
-    "Core Notes/Understanding the Encoder.md",
-    "Flask AI Fitness Potential Boilerplate.md",
-    "High Level NLP Transformer Process.md",
-    "Templates/Core Thought.md",
-    "Core Notes/Template Pattern.md",
-    "Attributes and Methods of the Flask App Object.md",
-    "Core Notes/Transformers.md",
-    "Core Notes/Express.md",
-    "Core Notes/Flask Middleware.md",
-    "Swin Transformer Example Code.md",
-    "Swin Loss Curves.png",
-    "Screen Shot 2023-10-27 at 12.48.45 PM.png",
-    "Natural Language Processing - Transformer Analogy.md",
-    "Bidirectional RNN.md",
-    "RNN computation graph.pdf",
-    "GenImage_paper.pdf",
-    "GenImage.pdf",
-    "Core Notes/Style Transfer.pdf",
-    "Core Notes",
-    "What degree of UX",
-    "Templates",
-    "IMG_0747.heic",
-    "Java (Servlets",
-    "Core Notes/Untitled Page 2.pdf",
+    "Bridged Ethernet Local Area Network Loop.png",
+    "OSI Model.md",
+    "What is the EvoArch model?.md",
+    "Layered Acyclic Networks.md",
+    "Toy Network With 4 Layers.png",
+    "Protocol Stack.png",
+    "Protocol.md",
+    "Computer Networks.md",
+    "IPV4.md",
+    "Untitled 6.md",
+    "Internet Hourglass Shape.png",
+    "What is the end-to-end (e2e) principle?.md",
+    "End to End Violation - NAT box diagram.png",
+    "Network Address Translation.png",
+    "NAT box diagram.png",
+    "Spanning Tree Protocol.md",
+    "Core Notes/Minimum Spanning Tree.md",
+    "Osi model.pdf",
+    "OSI example image.png",
+    "Flyweight Pattern.md",
+    "OSI Model adf.md",
+    "React-Flow.md",
+    "React Typescript.md",
+    "Core Notes/Typescript.md",
+    "The Difference Between 'Input', 'Default', and 'Output' Types.md",
+    "Screenshot 2024-01-09 at 8.36.07 PM.png",
+    "Family Tree App.md",
+    "Django.md",
+    "Django Admin.md",
+    "Django Default Apps.md",
+    "Relational Database.md",
+    "Network Engineering.md",
+    "Postfit Backend.md",
+    "Custom Startapp Script in Flask.md",
+    "Structuring Flask Like Django.md",
+    "Flask Celery Flow Chart.png",
+    "Screen Shot 2023-12-29 at 1.37.20 PM.png",
+    "HEADSPACE_ERD.pdf",
+    "Postera Coding Assessment Readme.pdf",
+    "Group_Project_Description.pdf",
+    "DL_Group_Project.pdf",
+    "Swin Transformer AI detector.pdf",
+    "Transformers Hand Drawing.pdf",
+    "M3L16 Translation at Facebook (Guzman) - Slides v2.pdf",
+    "M3L15 Neural Machine Translation (Cross) - Slides v2.pdf",
+    "M3L14 Neural Attention Models (Szlam) - Slides v3.pdf",
     "Untitled.canvas"
   ]
 }

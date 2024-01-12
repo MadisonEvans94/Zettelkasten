@@ -1,184 +1,112 @@
 [Graph QL Full Series](https://www.youtube.com/watch?v=Y0lDGjwRYKw&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f&ab_channel=TheNetNinja)
-![[Screen Shot 2023-06-17 at 7.37.00 PM.png]]
-###### Upstream: [[Web API]]
-###### Siblings: [[REST API]]
+
 #incubator 
+upstream: [[Web API]]
 
-2023-05-21
-20:50
+---
 
-### Why use GraphQL?: 
+**links**: 
 
-The main advantage of GraphQL is that it lets you get exactly the data you need, in a single request. It's efficient and flexible, especially for complex applications and data structures.
+---
 
-### Analogy: 
-
-Imagine you're in a large supermarket, like a Walmart or Target. You need a shopping list to find and buy the items you need. In this analogy, GraphQL is like a super-interactive shopping list. You can list all the items you want, and if you suddenly decide you want to know more about a certain item - like where it's made, the ingredients, or even customer reviews - you just add those details to your shopping list, and the supermarket (the server) will provide you with all the information you requested.
-
-Now, REST is like a less interactive shopping list. If you're using REST, you might have a shopping list with specific aisles or sections of the supermarket. Each aisle represents a different endpoint in REST. But if you want to know more about a product, you have to go to another specific aisle (another endpoint) to get that information. That can mean a lot of back-and-forth in the supermarket!
-
-The key difference here is that with GraphQL, you send a detailed shopping list to the supermarket's helper (the server), and they do all the hard work for you, gathering all the items and details you need in one go. With REST, you're the one doing the shopping, going to different aisles (endpoints) to gather the items and information you need.
-
-### Terms: 
-
-1.  **Query**: Just like your shopping list, a query is a request that you send to the GraphQL server. You specify what data you need, down to the exact fields or properties, and the server will return that information in the same shape as your request.
-    
-2.  **Mutation**: While a query lets you read data, a mutation lets you change data. This could be creating, updating, or deleting data. See [[Mutations in GraphQL]] for more
-    
-3.  **Schema**: This is the blueprint of your data, much like a map of the supermarket. It outlines what queries and mutations are available and what types of data can be requested.
-    
-4.  **Resolvers**: These are the functions in a GraphQL server that fetch the data for each field in your query. Think of them like the supermarket helpers who go and find each item on your shopping list.
-    
-5.  **Introspection**: This is a neat feature in GraphQL where you can query the schema for details about what queries, mutations, and types are available.
-    
-6.  **Directives**: These are used in a query or mutation to change the default behavior of the GraphQL server. They're a bit like special instructions on your shopping list, e.g., "get organic apples if available."
-
-### Example: 
-
-*Let's use an example that shows the difference between a REST api request and GraphQL request* 
-
-**REST**
-
-1.  Fetch user information:
-```bash
-GET /users/{userId}
-```
+Brain Dump: 
+![[Traditional REST Paradigm.png]]
+- downsides to REST 
+	- under and over fetching 
+	- when to use rest vs graphql 
+--- 
 
 
-```json
-//Response: 
-{
-  "id": "1",
-  "name": "Alice",
-  "email": "alice@example.com"
-}
-```
 
-2.  Fetch a post by that user:
-```bash
-GET /users/{userId}/posts/{postId}
-```
+Absolutely, let's create a succinct and organized markdown document covering the essential aspects of GraphQL for a developer. This document will provide clarity on what GraphQL is, why it's used, its tradeoffs compared to traditional API interfaces, and other relevant information.
 
-```json
-//Response: 
-{
-  "id": "1",
-  "userId": "1",
-  "title": "Alice's first blog post",
-  "content": "Hello, world!"
-}
-```
+---
 
-3.  Fetch comments on that post:
-```bash
-GET /posts/{postId}/comments
-```
+## What is GraphQL?
 
-```json
-//Response: 
-[
-  {
-    "id": "1",
-    "postId": "1",
-    "commenter": "Bob",
-    "comment": "Nice post, Alice!"
-  },
-  {
-    "id": "2",
-    "postId": "1",
-    "commenter": "Charlie",
-    "comment": "I agree with Bob."
-  }
-]
-```
+GraphQL is a query language for APIs and a runtime for executing those queries by using a type system you define for your data. It was developed by Facebook in 2012 and later open-sourced. GraphQL isn't tied to any specific database or storage engine and is instead backed by your existing code and data.
 
-**GraphQL**
+### Key Concepts:
 
-With GraphQL, we can fetch all of this information in a single request:
+- **Queries**: Read operations in GraphQL, used to fetch the desired data structure.
+- **Mutations**: Write operations, used for creating, updating, or deleting data.
+- **Schema**: A model of the data that can be requested from the GraphQL server, including types, queries, and mutations.
+- **Resolvers**: Functions that handle the logic for fetching the data for a specific query or mutation.
 
-Request:
-```graphql
-query {
-  user(id: "1") {
-    id
-    name
-    email
-    post(id: "1") {
-      id
-      title
-      content
-      comments {
-        id
-        commenter
-        comment
-      }
-    }
-  }
-}
-```
+> see [[Queries and Mutations]] for more detail
+### Analogy
 
-```json
-//Response: 
-{
-  "data": {
-    "user": {
-      "id": "1",
-      "name": "Alice",
-      "email": "alice@example.com",
-      "post": {
-        "id": "1",
-        "title": "Alice's first blog post",
-        "content": "Hello, world!",
-        "comments": [
-          {
-            "id": "1",
-            "commenter": "Bob",
-            "comment": "Nice post, Alice!"
-          },
-          {
-            "id": "2",
-            "commenter": "Charlie",
-            "comment": "I agree with Bob."
-          }
-        ]
-      }
-    }
-  }
-}
-```
+#### Queries: 
+Imagine you have a magic book that can answer any question about your favorite video game. You ask the book a question, like "What is the name of the main character?" or "How many levels are there?" The book answers with exactly what you want to know. In GraphQL, a **query** is like asking a question to a special computer program. You ask for specific information (like a list of your friends' names or the scores of recent games), and it gives you just that information, nothing more and nothing less.
 
-### Additional Questions: 
+#### Mutations: 
+Now, think about when you want to change something in a game, like updating your high score, adding a new friend, or deleting an old game. In GraphQL, these changes are called **mutations**. It's like telling the magic book, "Hey, I have a new high score! Please update it." The book then changes the information to include your new high score.
 
-*where is graphQL used the most? Why not just have this be the standard? It seems a lot more resource efficient*
+#### Schema: 
+A schema is like a map or a guide of all the things you can ask from the magic book. It tells you what questions are allowed and what kind of answers you can expect. For example, the schema might say you can ask about game characters, levels, and scores, and it will tell you exactly how you can ask these questions and what kind of answers you'll get. In GraphQL, the **schema** is a plan that shows all the types of queries and mutations you can do, and what kind of data, like numbers, text, or lists, you can ask for or change.
 
-GraphQL is increasingly used in a variety of domains, but it is most commonly used in web development and mobile app development. It is especially popular in scenarios where the data requirements are complex, or where the same backend must serve different kinds of clients (like web, mobile, IoT devices), each with slightly different data needs.
+#### Resolvers: 
+Resolvers are like helpers or guides in the magic book. When you ask a question (make a query) or want to change something (do a mutation), these guides find the answer or make the change for you. They know where to look and what to do to get you the information you need or update the information as you want. In GraphQL, **resolvers** are the functions in the system that know how to get the data you ask for in a query or how to make the changes you want in a mutation.
 
-There are indeed several advantages of GraphQL over REST, including:
+>So, in summary, using GraphQL is like having a magic book: you ask it questions (queries) or tell it to change things (mutations), it knows what you can ask and change (schema), and it has helpers to find answers and make changes for you (resolvers).
 
-1.  **Efficiency**: With GraphQL, clients can get exactly what they need in one request, which can result in fewer bytes over the wire and fewer round-trips to the server.
-2.  **Flexibility**: Clients can specify exactly what data they need, which can simplify client-side data management and reduce over-fetching or under-fetching of data.
-3.  **Strong Typing**: Because GraphQL schemas are strongly typed, they provide a contract for the data that can be queried, which can lead to safer and more reliable apps.
-4.  **Insightful Analytics**: GraphQL allows you to have fine-grained analytics about what data is being requested, which can be useful for performance tuning and business analytics.
+## Why Use GraphQL?
 
-However, there are several reasons why GraphQL has not completely replaced REST:
+### Advantages:
 
-1.  **Learning Curve and Complexity**: While GraphQL has a lot of benefits, it also introduces new concepts and abstractions that developers need to learn. For simple APIs, REST can be easier and quicker to implement.
-2.  **Tooling and Ecosystem**: REST has been around for a long time, so there are a lot of tools, libraries, and middleware that developers can use to simplify development, handle common tasks, and improve performance. While the GraphQL ecosystem is growing, it's not as mature as the REST ecosystem.
-3.  **HTTP Features**: REST makes full use of HTTP features like status codes, caching, and more. While some of these can be replicated in GraphQL, it doesn't leverage them out of the box.
-4.  **Transition Costs**: For teams with existing REST APIs, transitioning to GraphQL can be costly in terms of time and resources, as it may require significant changes to both the backend and clients.
+1. **Data Aggregation from Multiple Sources**: GraphQL can aggregate data from multiple sources, including databases and third-party APIs.
+2. **Fetch Only What You Need**: Unlike traditional REST APIs, GraphQL allows clients to specify exactly what data they need, reducing over-fetching.
+3. **Strong Typing**: The schema defines the data structure, leading to more predictable and safer API interactions.
+4. **Real-Time Data with Subscriptions**: GraphQL supports real-time data updates with subscriptions.
+5. **Developer Experience**: Tools like GraphiQL provide a rich interface for exploring and testing GraphQL queries.
 
-So while GraphQL is a powerful tool, it's not a one-size-fits-all solution. Whether a team chooses GraphQL, REST, or another approach often depends on their specific needs, resources, and existing infrastructure.
+### Use Cases:
 
-*why is it called GraphQL? Does GraphQL have anything to do with graph theory?*
+- Complex Systems with Many Entities and Relationships
+- Projects Requiring Fine-grained Control Over Data Retrieval
+- Applications that Need to Aggregate Data from Multiple Sources
 
-The name "GraphQL" is derived from the idea that the data you're working with can be viewed as a "graph". This doesn't strictly refer to "graph theory" in the mathematical sense, but more to the idea of a graph data structure, where entities (nodes) and their relationships (edges) form a complex, interconnected web.
+## Tradeoffs Compared to Traditional APIs
 
-In many applications, data is naturally graph-like. For example, in a social media application, users (nodes) might be friends with other users (nodes), and those relationships (edges) form a graph. Users might also create posts (more nodes), like or comment on posts (more edges), follow other users (more edges), and so on. See [[Social Networks and the Graph Structures They Create]] for more detail. 
+### Compared to REST:
 
-GraphQL leverages this idea of a graph of data to allow you to model and query your data in a more natural and flexible way. For example, starting from a user node, you might follow the "friends" edges to get a list of friends, then follow the "posts" edges from each friend to get a list of their posts.
+1. **Over-fetching and Under-fetching**: REST often leads to over-fetching (getting more data than needed) or under-fetching (making additional requests for related data). GraphQL solves this.
+2. **Multiple Endpoints vs. Single Endpoint**: REST typically uses multiple endpoints for different data resources, whereas GraphQL uses a single endpoint.
+3. **Caching**: REST APIs can leverage HTTP caching strategies more efficiently. Caching in GraphQL is more complex due to its dynamic nature.
+4. **Error Handling**: REST uses HTTP status codes to indicate errors, while GraphQL uses a single status code, with errors included in the response body.
+5. **Learning Curve**: GraphQL has a steeper learning curve compared to traditional REST APIs.
 
-So while the "Graph" in GraphQL doesn't directly reference graph theory, it does encapsulate the idea of viewing and manipulating your data as a graph-like structure.
+### Performance Considerations:
 
-*How do I create a GraphQL api?*
+- **Query Complexity**: Complex GraphQL queries can be more demanding on the server.
+- **Batching and Caching**: Strategies for batching requests and caching responses are different and can be more complex in GraphQL.
 
-See [[Creating a GraphQL API]] for more details 
+## Getting Started with GraphQL
+
+### Creating a GraphQL API:
+
+1. **Define a Schema**: Start by defining types, queries, and mutations in your schema.
+2. **Implement Resolvers**: Create functions to fetch data for each field in the schema.
+3. **Set Up a Server**: Use a GraphQL server library in your preferred programming language.
+
+### Tools and Libraries:
+
+- **GraphQL.js**: The reference implementation of GraphQL for JavaScript.
+- **Apollo Server**: A popular GraphQL server library.
+- **GraphiQL**: An in-browser IDE for exploring GraphQL.
+
+## Best Practices
+
+1. **Use Strongly Typed Schemas**: Ensure your schema accurately reflects the data model and business logic.
+2. **Efficient Resolvers**: Optimize resolver functions to avoid performance bottlenecks.
+3. **Error Handling**: Implement comprehensive error handling in your resolvers.
+4. **Security**: Implement rate limiting, validation, and authentication/authorization mechanisms.
+5. **Documentation**: Maintain clear and updated documentation for your GraphQL API.
+
+## Conclusion
+
+GraphQL offers a flexible, efficient approach to working with APIs. While it has many advantages, especially for complex applications, it also brings its own set of challenges and considerations. As with any technology choice, it's essential to evaluate its fit based on the specific needs and context of your project.
+
+---
+
+This document provides a foundational understanding of GraphQL, its advantages, tradeoffs, and some best practices for getting started. As a developer, it's crucial to dive deeper into each of these areas to fully leverage GraphQL's capabilities in your projects.

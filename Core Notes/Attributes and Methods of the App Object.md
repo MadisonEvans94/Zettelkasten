@@ -7,7 +7,7 @@ When you initialize an Express.js application using `const app = express();`, yo
 
 #### Properties
 
-1. `app.locals`: an object upon which you can define variables that are scoped to the application level. These variables, or "application-level locals", are available across all the views within your application. *This is conceptually similar to [[useContext]]* 
+1. `app.locals`: an object upon which you can define variables that are scoped to the application level. These variables, or "application-level locals", are available across all the views within your application. *This is conceptually similar to [[React Context Provider]]* 
 
 2. `app.mountpath`: A property that contains the path pattern(s) on which a sub-app was mounted. *see [[sub-apps]] for more details*
 

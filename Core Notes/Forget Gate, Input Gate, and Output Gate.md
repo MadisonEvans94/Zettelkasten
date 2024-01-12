@@ -12,7 +12,7 @@
 
 **Main Takeaway**: For LSTM cells, everytime there is a sigmoid function, that is where the *gate* is 
 
-### Diagram:![[Untitled Page.jpeg]]
+### Diagram:![[LSTM gates analogous diagram.jpeg]]
 
 - **tanh** is the function that calculates the actual memory value while the **sigmoid** function determines what percentage to attenuate 
 - **sigmoid** function can thought of as *notches* as depicted in diagram above. These notches determine how much contribution it's input has 

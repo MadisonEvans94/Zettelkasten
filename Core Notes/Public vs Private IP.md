@@ -1,6 +1,6 @@
 #seed 
 upstream: [[Network Engineering]]
-[[ipv4]]
+[[IPV4]]
 
 ---
 

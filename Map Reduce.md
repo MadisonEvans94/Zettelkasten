@@ -9,6 +9,11 @@ upstream: [[Big Data]]
 
 # Brain Dump: 
 
+- hadoop (google) 
+- map phase and reduce phase 
+- example (word count across distributed clusters)
+- not good for iterative processes like kmeans clustering 
+
 
 --- 
 

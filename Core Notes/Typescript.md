@@ -1,18 +1,19 @@
 #seed 
-###### upstream: 
+upstream:
 
-### Origin of Thought:
+---
 
+**links**: 
 
-### Underlying Question: 
+---
 
+Brain Dump: 
 
-### Solution/Reasoning: 
-
-
-### Examples (if any): 
-
-upstream: [[Software Development]]
-### Seed Bucket
+--- 
 
 
+
+[[Typescript: special]]
+
+
+[[React Typescript]]

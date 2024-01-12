@@ -77,6 +77,46 @@ Finally we need to decide what we're going to output. This will be a filtered ve
 $$o_t = {\sigma} (W_o[h_{t-1}, x_t] + b_o) $$
 $$h_t = o_t{\ast}tanh(C_t)$$
 
+Certainly! I'll add a "Weights" section to your notes that describes the weight matrices involved in an LSTM cell. You can insert this section after the "Step By Step Walkthrough" and before any conclusion or summary you may have.
+
+---
+
+### Weights
+
+In an LSTM cell, the behavior of gates and the cell state update is governed by a series of weight matrices and bias vectors. These weights are parameters learned during the training process and are fundamental to the LSTM's ability to store and manage information over time.
+
+There are four main weight matrices (and their corresponding biases) for each of the gates and the cell state, which interact with the input $( x_t )$ and the previous hidden state $( h_{t-1} )$.  The weight matrices and biases are as follows:
+
+#### Forget Gate Weights
+- $( W_f )$: Weight matrix for the forget gate, applied to the input and previous hidden state.
+- $( b_f )$: Bias for the forget gate.
+
+#### Input Gate Weights
+- $( W_i )$: Weight matrix for the input gate, applied to the input and previous hidden state.
+- $( b_i )$: Bias for the input gate.
+
+#### Cell State Weights
+- $( W_C )$: Weight matrix for creating the cell state candidate, applied to the input and previous hidden state.
+- $( b_C )$: Bias for the cell state candidate.
+
+#### Output Gate Weights
+- $( W_o )$: Weight matrix for the output gate, applied to the input and previous hidden state.
+- $( b_o )$: Bias for the output gate.
+
+Each gate has two sets of weights and biases: one that interacts with the input \( x_t \) and another that interacts with the previous hidden state \( h_{t-1} \). For computational efficiency, these weights are often concatenated into larger matrices:
+
+- $( W_x = [W_{xf}, W_{xi}, W_{xo}, W_{xc}] )$: Concatenated weight matrix for the input.
+- $( W_h = [W_{hf}, W_{hi}, W_{ho}, W_{hc}] )$: Concatenated weight matrix for the previous hidden state.
+- $( b = [b_f, b_i, b_o, b_C] )$: Concatenated bias vector.
+
+During the forward pass, the LSTM cell calculates the following vectors:
+
+- $( f_t = \sigma(W_f [h_{t-1}, x_t] + b_f) )$: The forget gate vector.
+- $( i_t = \sigma(W_i [h_{t-1}, x_t] + b_i) )$: The input gate vector.
+- $( \tilde{C}_t = \tanh(W_C [h_{t-1}, x_t] + b_C) )$: The cell state candidate vector.
+- $( o_t = \sigma(W_o [h_{t-1}, x_t] + b_o) )$: The output gate vector.
+
+These calculations result in the LSTM cell's ability to maintain a long-term memory, decide what information to retain or discard, and what to output as the current hidden state $( h_t )$ and the current cell state $( c_t )$.
 
 ---
 
