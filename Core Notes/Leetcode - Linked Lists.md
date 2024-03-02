@@ -1,0 +1,3 @@
+- use 3 pointers 
+- creating dummy heads 
+- 

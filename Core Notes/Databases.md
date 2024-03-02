@@ -37,27 +37,30 @@ A general-purpose DBMS allows the definition, creation, querying, update, and ad
 
 *A database system typically includes the following components:*
 
-#### 1. **Tables**: 
+**Tables**: 
 This is where the data is stored.
 
-#### 2. **Queries**: 
+**Queries**: 
 A way to retrieve information from a database.
 
-#### 3. **Forms**: 
+**Forms**: 
 A way to enter data into a table or to get data from tables.
 
-#### 4. **Reports**: 
+**Reports**: 
 It pulls data from tables to show it in a structured way.
 
-#### 5. **Macros**: 
+**Macros**: 
 These are automated scripts.
 
-### Database Design <a name="database-design"></a>
+### Database Design 
 
 **Database design** is the process of producing a detailed data model of a database. This data model contains all the needed logical and physical design choices and physical storage parameters needed to generate a design.
 
-A good design is important for efficiency, reliability, and accuracy. This involves understanding the business needs, creating a logical model, transforming to a physical model, and then implementing the model. See [[ACID]] principles for more
+A good design is important for efficiency, reliability, and accuracy. This involves understanding the business needs, creating a logical model, transforming to a physical model, and then implementing the model. 
 
+>See [[ACID]] principles for more
+
+>See [[Database Application Development Methodology]] for more
 ### Normalization <a name="normalization"></a>
 
 **Normalization** is a method to eliminate the data redundancy and dependency by organizing the fields and tables of a database. It involves decomposing a table into less redundant tables without losing information.

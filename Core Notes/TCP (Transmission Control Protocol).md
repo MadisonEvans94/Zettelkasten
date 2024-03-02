@@ -1,7 +1,8 @@
 #seed 
 upstream: [[Network Engineering]], [[cyber security]]
-
+[[Network Address Translation (NAT)]]
 ## TCP: Transmission Control Protocol
+#TODO: understand difference between stateless and stateful firewalls
 
 Transmission Control Protocol (TCP) is a standard that defines how to establish and maintain a network conversation through which application programs can exchange data. TCP works with the Internet Protocol (IP), which defines how computers send packets of data to each other.
 
@@ -30,7 +31,11 @@ TCP is heavyweight. TCP requires three packets to set up a socket connection, be
 
 ### TCP Segment Structure
 
+![[TCP Segment Structure.png]]
+
 A TCP segment consists of a segment header and a data section. The TCP header contains 10 mandatory fields, and an optional extension field (Options):
+
+#TODO: add descriptions for what each portion of the header is for 
 
 - Source port (16 bits)
 - Destination port (16 bits)

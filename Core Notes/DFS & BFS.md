@@ -1,6 +1,7 @@
 #incubator 
 ###### upstream: [[Algorithms]]
-###### siblings: [[Graph Theory]], [[Dijkstra's Algorithm]]
+
+[[DFS & BFS Example Implementation ]]
 
 ### Origin of Thought:
 - these are some of the most basic building blocks when it comes to search algorithms 

@@ -4,95 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "6553018173a5cf44",
+        "id": "591b884ac0704456",
         "type": "tabs",
         "children": [
           {
-            "id": "bcb9e37b9e88c546",
+            "id": "91e02a9915339a0b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React Typescript.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c982391268922c3c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/Typescript.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e0516f7a49b440df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OSI Model.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "512dad9b53446cd1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Notes/Minimum Spanning Tree.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3a799c190d1170e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "IPV4.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8d488568d06996c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Protocol.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f27c06bd809b94e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spanning Tree Protocol.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,18 +35,6 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byModifiedTime"
-              }
-            }
-          },
-          {
-            "id": "ea740ceac91fcf90",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
               }
             }
           },
@@ -150,7 +61,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -171,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spanning Tree Protocol.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spanning Tree Protocol.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Spanning Tree Protocol.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -233,54 +141,55 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "f27c06bd809b94e2",
+  "active": "91e02a9915339a0b",
   "lastOpenFiles": [
-    "Bridged Ethernet Local Area Network Loop.png",
-    "OSI Model.md",
-    "What is the EvoArch model?.md",
-    "Layered Acyclic Networks.md",
-    "Toy Network With 4 Layers.png",
-    "Protocol Stack.png",
-    "Protocol.md",
-    "Computer Networks.md",
-    "IPV4.md",
-    "Untitled 6.md",
-    "Internet Hourglass Shape.png",
-    "What is the end-to-end (e2e) principle?.md",
-    "End to End Violation - NAT box diagram.png",
-    "Network Address Translation.png",
-    "NAT box diagram.png",
-    "Spanning Tree Protocol.md",
-    "Core Notes/Minimum Spanning Tree.md",
-    "Osi model.pdf",
-    "OSI example image.png",
-    "Flyweight Pattern.md",
-    "OSI Model adf.md",
-    "React-Flow.md",
-    "React Typescript.md",
-    "Core Notes/Typescript.md",
-    "The Difference Between 'Input', 'Default', and 'Output' Types.md",
-    "Screenshot 2024-01-09 at 8.36.07 PM.png",
-    "Family Tree App.md",
-    "Django.md",
-    "Django Admin.md",
-    "Django Default Apps.md",
-    "Relational Database.md",
-    "Network Engineering.md",
-    "Postfit Backend.md",
-    "Custom Startapp Script in Flask.md",
-    "Structuring Flask Like Django.md",
-    "Flask Celery Flow Chart.png",
-    "Screen Shot 2023-12-29 at 1.37.20 PM.png",
-    "HEADSPACE_ERD.pdf",
-    "Postera Coding Assessment Readme.pdf",
-    "Group_Project_Description.pdf",
-    "DL_Group_Project.pdf",
-    "Swin Transformer AI detector.pdf",
-    "Transformers Hand Drawing.pdf",
-    "M3L16 Translation at Facebook (Guzman) - Slides v2.pdf",
-    "M3L15 Neural Machine Translation (Cross) - Slides v2.pdf",
-    "M3L14 Neural Attention Models (Szlam) - Slides v3.pdf",
-    "Untitled.canvas"
+    "Core Notes/What's Inside a Router.png",
+    "Core Notes/What's Inside a Router 4.png",
+    "Core Notes/What's Inside a Router 3.png",
+    "Core Notes/What's Inside a Router 2.png",
+    "Core Notes/Unibit Trie.png",
+    "Core Notes/Trie Diagram.png",
+    "Core Notes/Take a Ticket Scheduling.png",
+    "Core Notes/Take a Ticket Scheduling pt 3.png",
+    "Core Notes/Take a Ticket Scheduling pt 2.png",
+    "Core Notes/Switching Pointers Improves Search Cost.png",
+    "Core Notes/Supertypes and Subtypes.png",
+    "Router Design and Algorithms.md",
+    "Core Notes/erd.pdf",
+    "Core Notes/Web Sockets.md",
+    "Core Notes/Web Accessibility.md",
+    "Core Notes/Tuple Calculus.md",
+    "Core Notes/Trie (Prefix Tree).md",
+    "Core Notes/Tailwind.md",
+    "Core Notes/Submitting Forms in React.md",
+    "Core Notes/Stateless vs Stateful systems.md",
+    "Core Notes/Router Design and Algorithms.md",
+    "Core Notes/Router Design and Algorithms pt 2.md",
+    "Core Notes/Reversing a String in Python.md",
+    "Core Notes/Relational Calculus.md",
+    "Core Notes/Relational Algebra.md",
+    "Core Notes/React Side Effects.md",
+    "Core Notes/React Native.md",
+    "Core Notes/React Code Splitting.md",
+    "Core Notes/questions.md",
+    "Core Notes/Python - Set Default.md",
+    "Core Notes/Push Notifications.md",
+    "Core Notes/Prisma.md",
+    "Core Notes/Palette Pal 2.0.md",
+    "Core Notes/OSPF.md",
+    "Core Notes/Nullish Coalescing Operator (??).md",
+    "Core Notes/NextResponse vs Response vs NextApiResponse.md",
+    "Core Notes/Longest Substring Without Repeating Characters.md",
+    "Core Notes/Untitled.canvas",
+    "Untitled.canvas",
+    "erd.pdf",
+    "Core Notes/Transformers Hand Drawing.pdf",
+    "Core Notes/Swin Transformer AI detector.pdf",
+    "Core Notes/RNN computation graph.pdf",
+    "Core Notes/Postera Coding Assessment Readme.pdf",
+    "Core Notes/Osi model.pdf",
+    "Core Notes/M3L16 Translation at Facebook (Guzman) - Slides v2.pdf",
+    "Core Notes/M3L15 Neural Machine Translation (Cross) - Slides v2.pdf",
+    "Core Notes/M3L14 Neural Attention Models (Szlam) - Slides v3.pdf"
   ]
 }

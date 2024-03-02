@@ -1,15 +1,22 @@
 #seed 
-###### upstream: 
+upstream:
 
-### Origin of Thought:
+---
+
+**links**: 
+
+---
+
+## API Paradigms 
+
+### REST API 
+[[REST API]]
+### GraphQL 
+[[GraphQL]]
+### gRPC 
+[[gRPC]]
+
+## API Design 
 
 
-### Underlying Question: 
 
-
-### Solution/Reasoning: 
-
-
-### Examples (if any): 
-
-[[Web Development]]
